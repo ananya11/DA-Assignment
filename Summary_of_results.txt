@@ -1,0 +1,26 @@
+If time permits, if can do ROC analysis as this is a binary classification.
+
+| Methodology | AMS Score | Precision | Recall  | Modeling overhead (s) | Prediction overhead (s) |   F1 score |
+———————————————————————————————————————————————————————————————————————————————————————————————————————————————
+|             |           |           |         |                       |                         |		|
+|             |           |           |         |                       |                         |		|
+———————————————————————————————————————————————————————————————————————————————————————————————————————————————-
+
+Scalability experiments
+
+|Methodology  | Modeling Scalability    |
+|             | Small | Medium  | Large |
+-----------------------------------------
+|             |       |         |       |
+|             |       |         |       |
+-----------------------------------------
+
+
+
+
+
+
+
+
+
+

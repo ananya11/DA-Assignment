@@ -10,12 +10,15 @@ Created on Sat Dec  6 22:56:18 2014
 Created on Thu Dec  4 18:58:34 2014
 
 @author: vivekbharathakupatni
+my path = /Users/vivekbharathakupatni/personal/acads/vtech/Fall-2014/Data-Analytics-1/project/kaggle
+
 """
 
 import pandas as pd
 import numpy as np
 from sklearn.naive_bayes import GaussianNB
 from sklearn.cross_validation import train_test_split
+from sklearn.metrics import classification_report
 
 
 ''' Conversion background = 0 
@@ -53,6 +56,16 @@ labels = tmp[label_idx].values.reshape(len(tmp))
 train_data, test_data, train_labels, test_labels = train_test_split(data, labels, test_size=0.2, random_state=42)
 
 clf = GaussianNB()
-clf.fit(train_data, train_labels)
+
+# This gets the time in ipython shell.
+print("\n\nModelling time:")
+%time clf.fit(train_data, train_labels)
+print("Modelling time ends\n\n")
 
 print(" Accuracy = " , clf.score(test_data, test_labels))
+print(classification_report(test_labels, clf.predict(test_data)))
+
+
+print("\n\nprediction time starts:")
+%time clf.predict(test_data)
+print("prediction time ends:\n\n")
