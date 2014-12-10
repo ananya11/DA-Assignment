@@ -1,4 +1,7 @@
-Methodology,AMS Score,Precision(global measure),Recall,Modeling overhead (s),Prediction overhead (s),F1 score
-Naïve Bayes: All the Features are used (80 - 20 split),,0.68,0.68,"68.9 ms
-","29.3 ms
-",0.68
+Methodology,AMS Score,Precision,Recall,F1 score,Modeling overhead (s),Prediction overhead (s),Background (precision),Background (Recall),Background (f1),Signal (precision),Signal(Recall),Signal(F1)
+Naïve Bayes: All the Features are used (80 - 20 split). Difficult to classify signal when compared to backgroud ,,0.68,0.68,0.68,"85.4 ms
+
+","85.4 ms
+",0.76,0.74,0.75,0.52,0.55,0.54
+"Decision Tree Classifier [index = gini, min_samples_split = 2, min_samples_leaf=1)",,0.77,0.76,0.77,11.4s,15.5 ms,0.83,0.82,0.82,0.65,0.66,0.66
+"Decision Tree Classifier [index = gini, min_samples_split = 5000, min_samples_leaf=1)",,0.81,0.81,0.81,5.31s,5.41 ms,0.86,0.86,0.86,0.73,0.72,0.72
