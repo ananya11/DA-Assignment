@@ -3,5 +3,5 @@ Naïve Bayes: All the Features are used (80 - 20 split). Difficult to classify si
 
 ","85.4 ms
 ",0.76,0.74,0.75,0.52,0.55,0.54
-"Decision Tree Classifier [index = gini, min_samples_split = 2, min_samples_leaf=1)",,0.77,0.76,0.77,11.4s,15.5 ms,0.83,0.82,0.82,0.65,0.66,0.66
-"Decision Tree Classifier [index = gini, min_samples_split = 5000, min_samples_leaf=1)",,0.81,0.81,0.81,5.31s,5.41 ms,0.86,0.86,0.86,0.73,0.72,0.72
+"Decision Tree Classifier [index = gini, min_samples_split = 300, min_samples_leaf=1)",,0.82,0.82,0.82,"8.75 s
+",12.7 ms,0.85,0.88,0.87,0.75,0.69,0.72
