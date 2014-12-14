@@ -62,6 +62,28 @@ labels = tmp[label_idx].values.reshape(len(tmp))
 # 80 - 20 split.
 train_data, test_data, train_labels, test_labels = train_test_split(data, labels, test_size=0.2, random_state=42)
 
+print("Removing colinearlity on data")
+
+add = pd.Index([])
+remove = pd.Index([])
+df = pd.DataFrame(data = train_data, columns = tmp.columns - ignore_idx)
+corr = df.corr()
+
+for c in corr.columns:
+    #print("column = ", c, corr[c][corr[c] > 0.98].index - pd.Index([c]))
+    if c not in remove:
+        add = add.union(pd.Index([c]))
+    redundant = corr[c][corr[c].abs() > 0.7].index - pd.Index([c]) - add
+    #print("adding following indices ", add)
+    remove = remove.union(redundant)
+    
+
+print(remove)
+print(add)
+
+train_data = pd.DataFrame(data=train_data, columns = df.columns)[df.columns- remove].values
+test_data = pd.DataFrame(data=test_data, columns = df.columns)[df.columns- remove].values
+
 clf = linear_model.LogisticRegression();
 
 # This gets the time in ipython shell.
@@ -74,3 +96,5 @@ print("\n\nprediction time starts:")
 print("prediction time ends:\n\n")
 #print(classification_report(test_labels, clf.predict(test_data)))
 print(classification_report(test_labels, predicted_labels))
+
+print("num of featurs = ", train_data.shape[1])

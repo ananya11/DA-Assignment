@@ -62,7 +62,11 @@ opt_criterion = None
 opt_min_split = None
 opt_f1_score = None
 
+# Original value used before finding correlation
 min_splits = range(1, 10, 1) + range(10, 100, 10) + range(100, 1000, 100) + range(1000, 10000, 1000)
+
+#new value 
+#min_splits = range(100, 1500, 100)
 
 def extract_f1_score(text):
     index = text.find('avg')
@@ -73,6 +77,28 @@ def extract_f1_score(text):
 # split into training and test data
 # 80 - 20 split.
 train_data, test_data, train_labels, test_labels = train_test_split(data, labels, test_size=0.2, random_state=42)
+print("Removing colinearlity on data")
+
+add = pd.Index([])
+remove = pd.Index([])
+df = pd.DataFrame(data = train_data, columns = tmp.columns - ignore_idx)
+corr = df.corr()
+
+for c in corr.columns:
+    if c not in remove:
+        add = add.union(pd.Index([c]))
+    redundant = corr[c][corr[c].abs() > 0.8].index - pd.Index([c]) - add
+    #print("adding following indices ", add)
+    remove = remove.union(redundant)
+    
+
+print(remove)
+print(add)
+
+train_data = pd.DataFrame(data=train_data, columns = df.columns)[df.columns- remove].values
+test_data = pd.DataFrame(data=test_data, columns = df.columns)[df.columns- remove].values
+print("num of featurs = ", train_data.shape[1])
+
 '''
 for crit in ['gini', 'entropy']:
     
