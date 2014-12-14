@@ -3,15 +3,15 @@ Methods to be explored (Initial the method you want to try)
 Naive Bayes Classifier	  Vivek
 Decision Tree Classifier  Vivek
 Neural Networks           Ananya    
-SVM                       Vivek
-Combined methods...       Vivek
+SVM                       Vivek*
+Combined methods...       Vivek*
 Logistic Regression       vivek
 LDA                       vivek
 QDA                       vivek
 k-Nearest Method	Vignesh
 
 
-
+* Indicates that methods are not evaluated till now 
 
 Description (Give a summary of the method in 1-2 paragraphs)
 
