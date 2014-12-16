@@ -1,0 +1,54 @@
+\begin{thebibliography}{1}
+
+\bibitem{DeepNN}
+P.~{Baldi}, P.~{Sadowski}, and D.~{Whiteson}.
+\newblock {Searching for exotic particles in high-energy physics with deep
+  learning}.
+\newblock {\em Nature Communications}, 5:4308, July 2014.
+
+\bibitem{Binary-DT}
+D.~{Bowser-Chao} and D.~L. {Dzialo}.
+\newblock {Comparison of the use of binary decision trees and neural networks
+  in top-quark detection}.
+\newblock {\em \prd}, 47:1900--1905, Mar. 1993.
+
+\bibitem{Cutts-NN1}
+D.~Cutts, J.~Hoftun, A.~Sornborger, R.~Astur, C.~R. Johnson, and R.~T. Zeller.
+\newblock The use of neural networks in the d0 data acquisition system.
+\newblock {\em Nuclear Science, IEEE Transactions on}, 36(5):1490--1493, Oct
+  1989.
+
+\bibitem{NN2}
+L.~L\"onnblad, C.~Peterson, and T.~R\"ognvaldsson.
+\newblock Finding gluon jets with a neural trigger.
+\newblock {\em Phys. Rev. Lett.}, 65:1321--1324, Sep 1990.
+
+\bibitem{StatPatternRecognition}
+I.~{Narsky}.
+\newblock {StatPatternRecognition: A C++ Package for Statistical Analysis of
+  High Energy Physics Data}.
+\newblock {\em ArXiv Physics e-prints}, July 2005.
+
+\bibitem{NN3}
+C.~Peterson.
+\newblock Track finding with neural networks.
+\newblock {\em Nuclear Instruments and Methods in Physics Research Section A:
+  Accelerators, Spectrometers, Detectors and Associated Equipment}, 279(3):537
+  -- 545, 1989.
+
+\bibitem{detectors}
+J.~Pinfold.
+\newblock Searching for exotic particles at the \{LHC\} with dedicated
+  detectors.
+\newblock {\em Nuclear Physics B - Proceedings Supplements}, 78(1–3):52 --
+  57, 1999.
+\newblock Advanced Technology and Particle Physics.
+
+\bibitem{Boosted-DT}
+B.~P. {Roe}, H.-J. {Yang}, J.~{Zhu}, Y.~{Liu}, I.~{Stancu}, and G.~{McGregor}.
+\newblock {Boosted decision trees as an alternative to artificial neural
+  networks for particle identification}.
+\newblock {\em Nuclear Instruments and Methods in Physics Research A},
+  543:577--584, May 2005.
+
+\end{thebibliography}
