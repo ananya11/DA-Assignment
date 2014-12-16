@@ -11,7 +11,7 @@ Link:
 Related work
 
 
-Paper #1
+Paper #1 - Ananya
 Searching for Exotic Particles in High-energy Physics with Deep Learning
 (ANN) paper.
 
@@ -30,8 +30,12 @@ Paper #2 - Ananya
 Forecasting with artificial neural networks: The state of the art
 http://www.sciencedirect.com/science/article/pii/S0169207097000447
 
-This paper provides an analysis of artificial neural networks in  the one of its major application area - forecasting. They provide a summary of current research status of ANN in forecasting and second they provide a guideline of areas for future research . 
-It discusses different ways to construct and implement neural networks for forecasting focussing mainly on multi-layer feed forward network. They provide a literature review of papers devoted to comparing ANNs with conventional forecasting approaches.
+This paper provides an analysis of artificial neural networks in  the one of its major application area - forecasting. 
+They provide a summary of current research status of ANN in forecasting and second they provide a guideline of areas for 
+future research . 
+It discusses different ways to construct and implement neural networks for forecasting focussing mainly on multi-layer
+feed forward network. They provide a literature review of papers devoted to comparing ANNs with conventional forecasting 
+approaches.
 
 
 Paper #3
