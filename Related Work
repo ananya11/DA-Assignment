@@ -38,4 +38,11 @@ feed forward network. They provide a literature review of papers devoted to comp
 approaches.
 
 
-Paper #3
+
+Paper #3 - Ananya
+Boosted Decision Trees as an Alternative to Artificial Neural Networks for Particle Identification
+http://arxiv.org/pdf/physics/0408124v2.pdf
+
+A data classification technic, boosting is introduced in this paper for data analysis by applying to decision trees. Boosting combines many weak classifier to achieve a final powerful classifier. It is anticipated to have wide application in particle physics experiments for signal and background analysis. Two boosting algorithm AdaBoost and e-Boost is considered here.
+
+In the paper, ANN and AdaBoost performances are compared under different scale. Comparing the best ANN results and best boosting results when trained by signal and neutral current, ANN keeps 1.5 times more background events for 50% CCQE efficiencies. Comparison of Adaboost and e-Boost performance for background contamination vs intrinsic CCQE selection efficiency shows that Adaboost is better for <200 tree iterations while e-Boost is better for larger iterations
