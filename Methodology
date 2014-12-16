@@ -38,3 +38,4 @@ Train/test split : 80-20
 Size of hidden layer(number of neurons) : 70
 Size of output layer : 1
 Background: 0 , Signal : 1
+
