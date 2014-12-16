@@ -1,15 +1,21 @@
-Methodology,AMS Score,Precision,Recall,F1 score,Modeling overhead (s),Prediction overhead (s),Background (precision),Background (Recall),Background (f1),Signal (precision),Signal(Recall),Signal(F1)
-Naïve Bayes: All the Features are used (80 - 20 split). Difficult to classify signal when compared to backgroud .  (15 least uncor related features selected),,0.77,0.72,0.73,"86.2 ms
+Methodology,AMS Score,Precision,Recall,F1 score,ROC Area,Modeling overhead (s),Prediction overhead (s),Background (precision),Background (Recall),Background (f1),Signal (precision),Signal(Recall),Signal(F1)
+Naïve Bayes: All the Features are used (80 - 20 split). Difficult to classify signal when compared to backgroud .  (15 least uncor related features selected),,0.77,0.72,0.73,,"86.2 ms
 
 ","10.9 ms
-",0..88,0.67,0.76,0.56,0.81,0.66
-"Decision Tree Classifier [index = gini, min_samples_split = 300, min_samples_leaf=1) No effect due to feature reduction",,0.82,0.82,0.82,"8.75 s
+",0.88,0.67,0.76,0.56,0.81,0.66
+"Decision Tree Classifier [index = gini, min_samples_split = 300, min_samples_leaf=1) No effect due to feature reduction",,0.82,0.82,0.82,,"8.75 s
 ",12.7 ms,0.85,0.74,0.87,0.75,0.69,0.72
-Logistric Regression (feature reduction had no impact),,0.74,0.75,0.74,12.3s,8.99 ms,0.78,0.74,0.82,0.66,0.54,0.59
-LDA (reduction of features had no effect),,0.74,0.75,0.74,316 ms,"19.6 ms
+Logistric Regression (feature reduction had no impact),,0.74,0.75,0.74,,12.3s,8.99 ms,0.78,0.74,0.82,0.66,0.54,0.59
+LDA (reduction of features had no effect),,0.74,0.75,0.74,,316 ms,"19.6 ms
 ",0.78,0.74,0.82,0.66,0.51,0.58
-QDA (reduction of features had impact).Correlation coefficient used: 0.95 features = 22,,0.77,0.76,0.76,266 ms,51.7 ms,0.84,0.79,0.81,0.63,0.71,0.67
-Custom network. (neurons = 20/10/20. no. of hidden layers = 3. 80-20 split) features =22,,,,,25.52 mins, 439 ms, 0.83, 0.89, 0.86, 0.77, 0.66, 0.71
-Feed Forward Network. (neurons = 40. no of hidden layers = 1. 80-20 split) features = 22,,,,,15.12 mins,112 ms,0.84,0.89,0.87,0.77,0.68,0.73
-Cascade Forward Network. (neurons = 40. no of hidden layers = 1. 80-20 split) features = 22,,,,,16.14 mins,181 ms,0.85,0.89,0.87,0.77,0.69,0.73 
-Pattern Neural Network. (neurons = 40. no of hidden layers = 1. 80-20 split) features = 22,,,,,7.58 mins, 121 ms,0.85, 0.89, 0.87, 0.77, 0.69, 0.73
+QDA (reduction of features had impact).Correlation coefficient used: 0.95 features = 22,,0.77,0.76,0.76,,266 ms,51.7 ms,0.84,0.79,0.81,0.63,0.71,0.67
+Custom network. (neurons = 20/10/20. no. of hidden layers = 3. 80-20 split) features =22,,,,,,25.52 mins, 439 ms,0.83,0.89,0.86,0.77,0.66,0.71
+Feed Forward Network. (neurons = 40. no of hidden layers = 1. 80-20 split) features = 22,,,,,,15.12 mins,112 ms,0.84,0.89,0.87,0.77,0.68,0.73
+Cascade Forward Network. (neurons = 40. no of hidden layers = 1. 80-20 split) features = 22,,,,,,16.14 mins,181 ms,0.85,0.89,0.87,0.77,0.69,0.73
+Pattern Neural Network. (neurons = 40. no of hidden layers = 1. 80-20 split) features = 22,,,,,,7.58 mins, 121 ms,0.85,0.89,0.87,0.77,0.69,0.73
+Rotation Forest,,0.84,0.84,0.84,0.91,1400s,??,0.86,0.91,0.88,0.8,0.73,0.76
+AdaBoostM1 (Decision Stump Tree),,0.77,0.77,0.75,0.86,36.7 s,,0.77,0.92,0.84,0.75,0.48,0.59
+Bagging (Rep Tree),,0.84,0.84,0.84,0.91,136s,,0.87,0.9,0.88,0.79,0.73,0.75
+Classification via clustering,,,,,0.628,,,,,,,,
+Classification via Regression,,,,,0.88,,,,,,,,
+MultiBoostAB (Decision Stump),,,,,,,,,,,,,
