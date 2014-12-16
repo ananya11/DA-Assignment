@@ -9,6 +9,14 @@ Logistic Regression       vivek
 LDA                       vivek
 QDA                       vivek
 k-Nearest Method	Vignesh
+Meta-classifiers	Vignesh
+	ADABoosting		
+	MultiBoost
+	Bagging
+	via Clustering
+	via Regression
+	Rotation Forest
+	
 
 
 * Indicates that methods are not evaluated till now 
