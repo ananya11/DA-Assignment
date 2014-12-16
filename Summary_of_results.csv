@@ -9,4 +9,4 @@ Logistric Regression (feature reduction had no impact),,0.74,0.75,0.74,12.3s,8.9
 LDA (reduction of features had no effect),,0.74,0.75,0.74,316 ms,"19.6 ms
 ",0.78,0.74,0.82,0.66,0.51,0.58
 QDA (reduction of features had impact).Correlation coefficient used: 0.95 features = 22,,0.77,0.76,0.76,266 ms,51.7 ms,0.84,0.79,0.81,0.63,0.71,0.67
-Feed Forward Network. (neurons = 70. no of hidden layers = 1, 80-20 split) features = 29,,0,0,0,26.32 mins,218 ms,0.84,0.89,0.87,0.77,0.68,0.73
+Feed Forward Network. (neurons = 70. no of hidden layers = 1. 80-20 split) features = 29,,0,0,0,26.32 mins,218 ms,0.84,0.89,0.87,0.77,0.68,0.73
