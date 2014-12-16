@@ -16,26 +16,54 @@ k-Nearest Method	Vignesh
 Description (Give a summary of the method in 1-2 paragraphs)
 
 
+Custom Network
+-----------------------
+We created a deep neural network with 4 layers: three hidden layers, one output layer. The first layer is a hidden layer which is connected to the network input. The second layer is also a hidden layer which is also connected to the input.  There are no direct connection between the three hidden layers. The output layer takes 3 inputs, two of the inputs are outputs of each hidden layer. The output layer is a recursive layer. So it's output is fed back as its fourth input. The network model is trained using 'trainrp' network training function which updates weight and bias according to resilient back propagation algorithm (Rprop).
 
-Feed Forward Network
------------------------ 
+The 1st hidden layer contains 20 neurons. The transfer function used in this layer is 'tansig' (tan-Sigmoid Transfer Function). Tansig is a neural network transfer function which calculates a layer's output from its net input. The second hidden layer has 10 neurons. The transfer function used here is 'logsig'. It is log-sigmoid transfer function. The third hidden layer has 20 neurons. The transfer function used here is again 'tansig'.  The output layer produces only 1 output ( 0 or 1). The transfer function used in this layer is 'purelin' which is default. It is a linear transfer function which calculates the final output.
+
+input data : 22 x 250000
+target : 1 x 250000
+Train/test split : 80-20
+Hidden Layer 1 size: 20
+Hidden Layer 2 size: 10
+Hidden Layer 3 size: 20
+Size of output layer : 1
+Background: 0 , Signal : 1
+
+
+Feedforward neural networks
+------------------------------------
 Feedforward neural networks consist of a series of layers. The first layer is the connection from the network input. The subsequent layer is a hidden layer which is connected to the input. The subsequent/ final layer is the output layer which produces the network's output. The network model is trained using 'trainscg' network training function which updates weight and bias according to the scaled conjugate gradient method.
 
 The hidden layer contains 70 neurons.  The transfer function used in this layer is 'tansig' (tan-Sigmoid Transfer Function). Tansig is a neural network transfer function which calculates a layer's output from its net input. The output layer produces only 1 output ( 0 or 1). The transfer function used in this layer is 'purelin'. It is a linear transfer function which calculates the final output. 
 
-input data : 29 x 250000
-target : 1 x 250000
-Train/test split : 80-20
 
-
-Cascade Forward Network
------------------------
-These are similar to feed-forward networks but includes a connection from the input and every previous layer to following layer. So the output layer here has two inputs : one from the previous hidden layer and the other from the input. The rest of the network is same as that of FeedForwardNetwork. 
-
-input data : 29 x 250000
+input data : 22 x 250000
 target : 1 x 250000
 Train/test split : 80-20
 Size of hidden layer(number of neurons) : 70
 Size of output layer : 1
 Background: 0 , Signal : 1
+
+
+
+Cascade Forward Network
+--------------------------------
+These are similar to feed-forward networks but includes a connection from the input and every previous layer to following layers. The output layer has two inputs : one from the previous hidden layer and the other from the input. The rest of the network is same as that of FeedForwardNetwork. 
+
+input data : 22 x 250000
+target : 1 x 250000
+Train/test split : 80-20
+Size of hidden layer(number of neurons) : 70
+Size of output layer : 1
+Background: 0 , Signal : 1
+
+
+Pattern Network
+-------------------
+This is a Pattern Recognition Network. These are a type of feedforward network that can be trained to classify inputs from target classes. The target data for pattern recognition networks should consist of vectors of all zero values except for a 1 in element i, where i is the class they are to represent. It contains one hidden layer of size 40. The network model is trained using 'trainrp' network training function.
+
+
+
 
