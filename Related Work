@@ -14,6 +14,7 @@ Related work
 Paper #1 - Ananya
 Searching for Exotic Particles in High-energy Physics with Deep Learning
 (ANN) paper.
+http://arxiv.org/abs/1402.4735
 
 The authors in this paper used deep learning methods of neural network to find exotic particles in high energy particle 
 colliders. Deep learning models are neural networks with multiple hidden networks. Current technics like shallow models 
