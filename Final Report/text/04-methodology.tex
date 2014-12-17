@@ -3,13 +3,13 @@
 
 
 \subsection{Data Preprocessing}
-In some situations, it becomes difficult to measure the physical properties of a particle such as momentum and energy accurately. In our original dataset, as many as 177000 out of 250000 instances had missing attributes. We considered three approaches to deal with missing values. First, we tried ignoring instances with missing attributes. But this resulted in very few useful instances. Second, we tried to replace the missing values with the mean/median. However, this biases the experiments. Finally, we decided to adopt a method known as multiple imputations~\cite{Multiple-Imputation} which replaces the missing values with a random number that follows the distribution for that attribute. We use the \texttt{Amelia}~\cite{Amelia} package to perform this task.
+In some situations, it becomes difficult to measure the physical properties of a particle such as momentum and energy accurately. In our original dataset, as many as 177000 out of 250000 instances had missing attributes. We considered three approaches to deal with missing values. First, we tried ignoring instances with missing attributes. But this resulted in very few useful instances. Second, we tried to replace the missing values with the mean/median. However, this biases the experiments. Finally, we decided to adopt a method known as multiple imputations~\cite{MultipleImputation} which replaces the missing values with a random number that follows the distribution for that attribute. We use the \texttt{Amelia}~\cite{Amelia} package to perform this task.
 
 
 
 \subsection{Feature Engineering and Selection}
 
-\begin{figure*}[h]
+\begin{figure*}[t]
 \centering
 \includegraphics[width=1.8\columnwidth]{Distribution}
 \caption{Distribution of different attributes for signal. Blue represents signal and red represents background.}
