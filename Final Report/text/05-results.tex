@@ -56,12 +56,27 @@ The regression method is comparable to other linear methods explored earlier. Th
 \begin{table*}[t]
 \centering 
 \caption{Accuracy results for different models} 
+\resizebox{\linewidth}{!}{%
 \begin{tabular}{|l|ccc|ccc|cccc|} 
 \hline 
 Classifiers & Precision(s) & Recall(s) & f1-score(s) & Precision(b) & Recall(b) & f1-score(b) & Precision & Recall & f1-score & ROC Area \\
 \hline
-Naive Bayes & 0.00 & 0.00 & 0.00 & 0.00 & 0.00 & 0.00 & 0.00 & 0.00 & 0.00 & 0.00 
-\end{tabular}
+Naive Bayes & 0.66 & 0.75 & 0.7 & 0.86 & 0.8 & 0.83 & 0.79 & 0.78 & 0.79 & 0.85 \\
+Decision Tree Classifier & 0.76 & 0.73 & 0.75 & 0.87 & 0.88 & 0.88 & 0.83 & 0.83 & 0.83 & 0.9 \\
+Logistric Regression & 0.69 & 0.62 & 0.65 & 0.81 & 0.86 & 0.83 & 0.77 & 0.78 & 0.77 & 0.84 \\
+LDA & 0.66 & 0.51 & 0.58 & 0.78 & 0.74 & 0.82 & 0.74 & 0.75 & 0.74 & 0.85 \\
+QDA & 0.65 & 0.78 & 0.71 & 0.88 & 0.79 & 0.83 & 0.8 & 0.79 & 0.79 & 0.86 \\
+k-nearest Neighbor & 0.72 & 0.69 & 0.72 & 0.84 & 0.86 & 0.85 & 0.8 & 0.8 & 0.8 & 0.87 \\
+Custom network & 0.79 & 0.71 & 0.74 & 0.85 & 0.9 & 0.87 & 0.83 & 0.83 & 0.82 & 0.89 \\
+Feed Forward Network & 0.79 & 0.74 & 0.77 & 0.87 & 0.9 & 0.88 & 0.84 & 0.84 & 0.84 & 0.91 \\
+Cascade Forward Network & 0.79 & 0.74 & 0.76 & 0.87 & 0.9 & 0.88 & 0.84 & 0.85 & 0.84 & 0.91 \\
+Pattern Neural Network & 0.75 & 0.71 & 0.73 & 0.85 & 0.88 & 0.87 & 0.82 & 0.82 & 0.82 & 0.9 \\
+Rotation Forest & 0.8 & 0.73 & 0.76 & 0.86 & 0.91 & 0.88 & 0.84 & 0.84 & 0.84 & 0.91 \\
+Boosting & 0.78 & 0.74 & 0.76 & 0.87 & 0.89 & 0.88 & 0.84 & 0.84 & 0.84 & 0.9 \\
+Bagging & 0.79 & 0.74 & 0.77 & 0.87 & 0.9 & 0.88 & 0.84 & 0.85 & 0.84 & 0.91 \\
+\hline
+
+\end{tabular}}
 \label{tab:AI-Summary} 
 \end{table*}
 %Models & \multicolumn{2}{|c|}{C2075} & \multicolumn{2}{|c|}{K20c}  \\ 
