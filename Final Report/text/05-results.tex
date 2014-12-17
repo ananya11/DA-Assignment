@@ -25,7 +25,7 @@ All experiments were run on a MacBook Pro using a \emph{4-core} Intel Core i7 pr
 While using the raw and derived features, we did not see any notable impact of the number of neighbors on the accuracy. Also, removing irrelevant and noisy features did not help (F1-score was always around 0.70). However, simply by using principal components improved the accuracy to over 74\%. Reducing the number of principal components to four increased the accuracy to over 77.5\%. Also, increasing the number of neighbors improved the accuracy further to 80\%. The best results were obtained for number of principal components = 4 and number of neighbors = 20. The corresponding results are tabulated in the table.
 
 \subsubsection{Neural Network}
-As mentioned before we used multiple NN technics to classify the data between a signal and a background, our results were almost similar. Among the 4 neural networks used here, feedforward and cascade forward network has the best ROC curve (AUC) of 0.91, signal precision and recall as 0.79 and 0.74 respectively.  
+As mentioned before we used multiple NN technics to classify the data between a signal and a background, our results were almost similar. Among the 4 neural networks used here, cascade forward network has the best results --  ROC curve (AUC) as 0.91, precision and recall as 0.84 and 0.85 respectively.  
 
 We noticed that for each network model, the testing performance stops increasing with the increase in the number of neurons in the hidden layers after a certain point . Liu et al.~\cite{NN-Result} call this as the stop criterion. Beyond this point the neural network overestimates the complexity of the target problem which causes overfitting.
 
