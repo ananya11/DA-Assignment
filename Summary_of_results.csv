@@ -9,10 +9,10 @@ Logistric Regression (feature reduction had no impact),,0.77,0.78,0.77,0.84,12.3
 LDA (reduction of features had no effect),,0.74,0.75,0.74,0.85,316 ms,"19.6 ms
 ",0.78,0.74,0.82,0.66,0.51,0.58
 QDA (reduction of features had impact).Correlation coefficient used: 0.95 features = 22,,0.8,0.79,0.79,0.86,266 ms,51.7 ms,0.88,0.79,0.83,0.65,0.78,0.71
-Custom network. (neurons = 20/10/20. no. of hidden layers = 3. 80-20 split) features =30,,0.83,0.83,0.82,0.89,17.05 mins, 317 ms,0.85,0.9,0.87,0.79,0.71,0.74
-Feed Forward Network. (neurons = 60. no of hidden layers = 1. 80-20 split) features = 30,,0.84,0.84,0.84,0.91,22.13 mins,173 ms,0.87,0.9,0.88,0.79,0.74,0.77
-Cascade Forward Network. (neurons = 80. no of hidden layers = 1. 80-20 split) features = 30,,0.84,0.85,0.84,0.91,29.13 mins,183 ms,0.87,0.9,0.88,0.79,0.74,0.76
-Pattern Neural Network. (neurons = 40. no of hidden layers = 1. 80-20 split) features = 30,,0.82,0.82,0.82,0.9,8.12 mins, 128 ms,0.85,0.88,0.87,0.75,0.71,0.73
+Custom network. (neurons = 20/10/20. no. of hidden layers = 3. 80-20 split) features =30,,0.83,0.83,0.82,0.89,603s, 187 ms,0.85,0.9,0.87,0.79,0.71,0.74
+Feed Forward Network. (neurons = 60. no of hidden layers = 1. 80-20 split) features = 30,,0.84,0.84,0.84,0.91,786s,102 ms,0.87,0.9,0.88,0.79,0.74,0.77
+Cascade Forward Network. (neurons = 80. no of hidden layers = 1. 80-20 split) features = 30,,0.84,0.85,0.84,0.91,1034s,108 ms,0.87,0.9,0.88,0.79,0.74,0.76
+Pattern Neural Network. (neurons = 40. no of hidden layers = 1. 80-20 split) features = 30,,0.82,0.82,0.82,0.9,8.288s, 75ms,0.85,0.88,0.87,0.75,0.71,0.73
 Rotation Forest,,0.84,0.84,0.84,0.91,362s,227s,0.86,0.91,0.88,0.8,0.73,0.76
 Boosting (MultiBoost with REP Tree),,0.84,0.84,0.84,0.90,87s,44s,0.87,0.89,0.88,0.78,0.74,0.76
 "Bagging (REP Tree, 50% bag size, 20 iterations)",,0.84,0.85,0.84,0.91,59.5s,44s,0.87,0.9,0.88,0.79,0.74,0.77
