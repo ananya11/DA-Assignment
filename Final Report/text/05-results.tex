@@ -18,7 +18,13 @@ In this section, we describe the dataset used, hardware details, accuracy, and t
 
 \subsubsection{Instance-based Classifiers}
 
-\subsubsection{Deep Learning}
+\subsubsection{Neural Network}
+As mentioned before we used multiple NN technics to classify the data between a signal and a background, our results were almost similar. Among the 4 neural networks used here, feedforward and cascade forward network has the best ROC curve (AUC) of 0.91, signal precision and recall as 0.79 and 0.74 respectively.  
+
+We noticed that for each network model, the testing performance stops increasing with the increase in the number of neurons in the hidden layers after a certain point . [] calls this as the stop criterion. Beyond this point the neural network overestimates the complexity of the target problem which causes overfitting.
+
+Recently there has been substantial interest in feed forward network with many layers. However, we restricted ourselves to only two layers (one hidden and one output layer) as we noticed an increase in overfitting when the number of layers in a feed forward network is greater than 2.  Similarly in the custom network that we designed, the neural network's performance improves when we increase the number of hidden layers from 2 to 3, the AUC is 0.89 but it is still less than other ANN model with 2 layers. 
+
 
 \subsubsection{Ensemble Methods and Meta-classifiers}
 
