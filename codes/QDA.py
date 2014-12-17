@@ -1,12 +1,5 @@
 # -*- coding: utf-8 -*-
 """
-Created on Sun Dec 14 01:25:18 2014
-
-@author: vivekbharathakupatni
-"""
-
-# -*- coding: utf-8 -*-
-"""
 Created on Sat Dec 13 20:27:35 2014
 
 @author: vivekbharathakupatni
@@ -27,7 +20,7 @@ Created on Thu Dec  4 18:58:34 2014
 my path = /Users/vivekbharathakupatni/personal/acads/vtech/Fall-2014/Data-Analytics-1/project/kaggle
 
 
-for QDA
+for LDA
 
 """
 
@@ -36,6 +29,7 @@ import numpy as np
 from sklearn.qda import QDA
 from sklearn.cross_validation import train_test_split
 from sklearn.metrics import classification_report
+from sklearn.metrics import roc_curve, auc
 
 
 ''' Conversion background = 0 
@@ -43,7 +37,7 @@ from sklearn.metrics import classification_report
 
 '''
 
-tmp = pd.read_csv('training.csv', index_col='EventId')
+tmp = pd.read_csv('large.csv', index_col='EventId')
 
 
 def labelTonumber(l):
@@ -72,41 +66,49 @@ data = tmp[tmp.columns - ignore_idx].values
 
 # split into training and test data
 # 80 - 20 split.
-train_data, test_data, train_labels, test_labels = train_test_split(data, labels, test_size=0.2, random_state=42)
+train_data_g, test_data_g, train_labels, test_labels = train_test_split(data, labels, test_size=0.2, random_state=42)
 
 print("Removing colinearlity on data")
 
-add = pd.Index([])
-remove = pd.Index([])
-df = pd.DataFrame(data = train_data, columns = tmp.columns - ignore_idx)
+df = pd.DataFrame(data = train_data_g, columns = tmp.columns - ignore_idx)
 corr = df.corr()
 
-for c in corr.columns:
-    if c not in remove:
-        add = add.union(pd.Index([c]))
-    redundant = corr[c][corr[c].abs() > 0.95].index - pd.Index([c]) - add
-    #print("adding following indices ", add)
-    remove = remove.union(redundant)
+cor_coefficients = [0.8, 0.85, 0.9, 0.95]
+for coefficient in cor_coefficients:
+    add = pd.Index([])
+    remove = pd.Index([])    
+    for c in corr.columns:
+    #print("column = ", c, corr[c][corr[c] > 0.98].index - pd.Index([c]))
+        if c not in remove:
+            add = add.union(pd.Index([c]))
+        redundant = corr[c][corr[c].abs() > coefficient].index - pd.Index([c]) - add
+        remove = remove.union(redundant)
     
+    print("For correlation coefficient = ", coefficient)
+    #print(remove)
+    #print(add)
 
-print(remove)
-print(add)
+    train_data = pd.DataFrame(data=train_data_g, columns = df.columns)[df.columns- remove].values
+    test_data = pd.DataFrame(data=test_data_g, columns = df.columns)[df.columns- remove].values
+    print("num of featurs = ", train_data.shape[1])
 
-train_data = pd.DataFrame(data=train_data, columns = df.columns)[df.columns- remove].values
-test_data = pd.DataFrame(data=test_data, columns = df.columns)[df.columns- remove].values
-print("num of featurs = ", train_data.shape[1])
+    clf = QDA();
 
-clf = QDA();
+    # This gets the time in ipython shell.
+    print("Modelling time:")
+    %time clf.fit(train_data, train_labels)
+    print("Modelling time ends")
 
-# This gets the time in ipython shell.
-print("\n\nModelling time:")
-%time clf.fit(train_data, train_labels)
-print("Modelling time ends\n\n")
+    print("prediction time starts:")
+    %time predicted_labels = clf.predict(test_data)
+    print("prediction time ends")
+    #print(classification_report(test_labels, clf.predict(test_data)))
+    print(classification_report(test_labels, predicted_labels))
 
-print("\n\nprediction time starts:")
-%time predicted_labels = clf.predict(test_data)
-print("prediction time ends:\n\n")
-#print(classification_report(test_labels, clf.predict(test_data)))
-print(classification_report(test_labels, predicted_labels))
-
-print("num of featurs = ", train_data.shape[1])
+    print("num of featurs = ", train_data.shape[1])
+    y_true = test_labels;
+    y_pred_proba = clf.predict_proba(test_data);
+    fpr, tpr, thresholds = roc_curve(y_true, y_pred_proba[:, 1])
+    roc_auc = auc(fpr, tpr)
+    print("ROC AUC =", roc_auc)
+    print("\n\n\n")

@@ -17,7 +17,8 @@ Created on Sat Dec  6 22:56:18 2014
 Created on Thu Dec  4 18:58:34 2014
 
 @author: vivekbharathakupatni
-my path = /Users/vivekbharathakupatni/personal/acads/vtech/Fall-2014/Data-Analytics-1/project/kaggle
+my path = /Users/vivekbharathakupatni/personal/acads/vtech/Fall-2014/Data-Analytics-1/project/DA-Assignment/input
+
 
 """
 
@@ -26,6 +27,7 @@ import numpy as np
 from sklearn import linear_model
 from sklearn.cross_validation import train_test_split
 from sklearn.metrics import classification_report
+from sklearn.metrics import roc_curve, auc
 
 
 ''' Conversion background = 0 
@@ -33,7 +35,7 @@ from sklearn.metrics import classification_report
 
 '''
 
-tmp = pd.read_csv('training.csv', index_col='EventId')
+tmp = pd.read_csv('large.csv', index_col='EventId')
 
 
 def labelTonumber(l):
@@ -70,10 +72,10 @@ df = pd.DataFrame(data = train_data, columns = tmp.columns - ignore_idx)
 corr = df.corr()
 
 for c in corr.columns:
-    #print("column = ", c, corr[c][corr[c] > 0.98].index - pd.Index([c]))
+    #print("column = ", c, corr[c][corr[c] > 0.9].index - pd.Index([c]))
     if c not in remove:
         add = add.union(pd.Index([c]))
-    redundant = corr[c][corr[c].abs() > 0.7].index - pd.Index([c]) - add
+    redundant = corr[c][corr[c].abs() > 0.8].index - pd.Index([c]) - add
     #print("adding following indices ", add)
     remove = remove.union(redundant)
     
@@ -98,3 +100,8 @@ print("prediction time ends:\n\n")
 print(classification_report(test_labels, predicted_labels))
 
 print("num of featurs = ", train_data.shape[1])
+y_true = test_labels;
+y_pred_proba = clf.predict_proba(test_data);
+fpr, tpr, thresholds = roc_curve(y_true, y_pred_proba[:, 1])
+roc_auc = auc(fpr, tpr)
+print("ROC AUC =", roc_auc)

@@ -94,8 +94,148 @@ No change
 *********************************************
 
 
+LR
+
+COR = 0.95
+
+            precision    recall  f1-score   support
+
+          0       0.81      0.86      0.84     33065
+          1       0.69      0.62      0.65     16935
+
+avg / total       0.77      0.78      0.77     50000
+
+('num of features = ', 29)
 
 
+
+COR = 0.85
+
+        precision    recall  f1-score   support
+
+          0       0.81      0.86      0.83     33065
+          1       0.69      0.60      0.64     16935
+
+avg / total       0.77      0.77      0.77     50000
+
+('num of featurs = ', 24)
+
+
+
+
+correlation = 0.9
+ precision    recall  f1-score   support
+
+          0       0.81      0.86      0.83     33065
+          1       0.69      0.61      0.65     16935
+
+avg / total       0.77      0.77      0.77     50000
+
+('num of featurs = ', 22)
+
+
+
+***************
+LDa (No effect)
+
+
+
+
+***************
+
+QDA
+
+('For correlation coefficient = ', 0.8)
+('num of featurs = ', 22)
+Modelling time:
+CPU times: user 255 ms, sys: 53.9 ms, total: 309 ms
+Wall time: 241 ms
+Modelling time ends
+prediction time starts:
+CPU times: user 31.7 ms, sys: 31 ms, total: 62.8 ms
+Wall time: 42.2 ms
+prediction time ends
+             precision    recall  f1-score   support
+
+          0       0.87      0.79      0.83     33065
+          1       0.66      0.77      0.71     16935
+
+avg / total       0.80      0.79      0.79     50000
+
+('num of featurs = ', 22)
+('ROC AUC =', 0.85836705496965371)
+
+
+
+
+('For correlation coefficient = ', 0.85)
+('num of featurs = ', 24)
+Modelling time:
+CPU times: user 306 ms, sys: 72.3 ms, total: 378 ms
+Wall time: 295 ms
+Modelling time ends
+prediction time starts:
+CPU times: user 34.6 ms, sys: 39.1 ms, total: 73.7 ms
+Wall time: 48.8 ms
+prediction time ends
+             precision    recall  f1-score   support
+
+          0       0.88      0.79      0.83     33065
+          1       0.65      0.78      0.71     16935
+
+avg / total       0.80      0.78      0.79     50000
+
+('num of featurs = ', 24)
+('ROC AUC =', 0.85748180738023461)
+
+
+
+
+('For correlation coefficient = ', 0.9)
+('num of featurs = ', 27)
+Modelling time:
+CPU times: user 357 ms, sys: 76 ms, total: 433 ms
+Wall time: 327 ms
+Modelling time ends
+prediction time starts:
+CPU times: user 37.3 ms, sys: 37.7 ms, total: 75 ms
+Wall time: 47.2 ms
+prediction time ends
+             precision    recall  f1-score   support
+
+          0       0.87      0.79      0.83     33065
+          1       0.65      0.78      0.71     16935
+
+avg / total       0.80      0.79      0.79     50000
+
+('num of features = ', 27)
+('ROC AUC =', 0.85816799371343222)
+
+
+
+
+('For correlation coefficient = ', 0.95)
+('num of featurs = ', 29)
+Modelling time:
+CPU times: user 391 ms, sys: 84.9 ms, total: 476 ms
+Wall time: 355 ms
+Modelling time ends
+prediction time starts:
+CPU times: user 42.7 ms, sys: 37.1 ms, total: 79.8 ms
+Wall time: 51 ms
+prediction time ends
+             precision    recall  f1-score   support
+
+          0       0.89      0.75      0.81     33065
+          1       0.62      0.82      0.71     16935
+
+avg / total       0.80      0.77      0.78     50000
+
+('num of featurs = ', 29)
+('ROC AUC =', 0.85639341249762091)
+
+
+*********************
 
 
 

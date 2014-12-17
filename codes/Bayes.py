@@ -22,6 +22,7 @@ from sklearn.cross_validation import train_test_split
 from sklearn.metrics import classification_report
 from sklearn import cross_validation
 from sklearn.metrics import f1_score
+from sklearn.metrics import roc_curve, auc
 
 
 
@@ -113,40 +114,9 @@ print("\n\nprediction time starts:")
 %time clf.predict(test_data)
 print("prediction time ends:\n\n")
 
+y_true = test_labels;
+y_pred_proba = clf.predict_proba(test_data);
 
-'''
-Now do the Cross validation score
- 
-'''
-
-data = tmp[add].values
-data_labels = tmp[label_idx].values.reshape(len(tmp))
-
-
-#print(getCrossValidationMetric(data, data_labels, 'precision'));
-
-
-''' Verification
-'''
-'''
-from sklearn import cross_validation
-X = data
-Y = data_labels
-kf = cross_validation.KFold(len(X), n_folds=5)
-
-print(kf)  
-cross_validation.KFold(n=len(X), n_folds=5, shuffle=False,
-                               random_state=None)
-
-for train_index, test_index in kf:
-    clf = GaussianNB()
-    clf.fit(X[train_index], Y[train_index])
-    print("score ", clf.score(data[test_index], labels[test_index]))
-    y_pred = clf.predict(data[test_index])
-    y_true = labels[test_index] 
-    print(f1_score(labels[test_index], y_pred, average='macro'))
-    print(f1_score(y_true, y_pred, average='micro'))
-    print(f1_score(y_true, y_pred, average='weighted'))
-    print(f1_score(y_true, y_pred, average=None))  
-    
-'''
+fpr, tpr, thresholds = roc_curve(y_true, y_pred_proba[:, 1])
+roc_auc = auc(fpr, tpr)
+print("ROC AUC =", roc_auc)

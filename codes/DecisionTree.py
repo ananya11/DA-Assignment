@@ -29,6 +29,7 @@ from sklearn.metrics import classification_report
 from sklearn.metrics import f1_score
 import re
 from sklearn.preprocessing import Imputer
+from sklearn.metrics import roc_curve, auc
 
 
 def getMEanMissingData(X):
@@ -80,7 +81,7 @@ opt_f1_score = None
 #min_splits = range(1, 10, 1) + range(10, 100, 10) + range(100, 1000, 100) + range(1000, 10000, 1000)
 
 #new value 
-min_splits = range(100, 600, 100)
+min_splits = range(200, 400, 100)
 
 def extract_f1_score(text):
     index = text.find('avg')
@@ -154,7 +155,13 @@ for crit in ['gini']:
         print(classification_report(test_labels, prediction))
         f1 = extract_f1_score(classification_report(test_labels, prediction))        
         print("extracting f1 score = ", f1)
-    
+        
+        y_true = test_labels;
+        y_pred_proba = clf.predict_proba(test_data);
+
+        fpr, tpr, thresholds = roc_curve(y_true, y_pred_proba[:, 1])
+        roc_auc = auc(fpr, tpr)
+        print("ROC AUC =", roc_auc)
         print("code for criterian = ", crit, " min samples ", min_samples, "ends") 
         if opt_min_split == None:
             opt_min_split = min_samples
