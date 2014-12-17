@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2014.8.22)  17 DEC 2014 05:35
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2014.8.22)  17 DEC 2014 10:22
 entering extended mode
 **C:/cygwin64/home/avignesh/repos/DA-Assignment/Final*Report/CS5525.tex
 ("C:/cygwin64/home/avignesh/repos/DA-Assignment/Final Report/CS5525.tex"
@@ -13,8 +13,9 @@ german-x-2013-05-26, nynorsk, oriya, panjabi, pinyin, polish, portuguese, roman
 ian, russian, sanskrit, serbian, slovak, slovenian, spanish, swedish, swissgerm
 an, tamil, telugu, turkish, turkmen, ukenglish, ukrainian, uppersorbian, usengl
 ishmax, welsh, loaded.
-("C:\cygwin64\home\avignesh\repos\DA-Assignment\Final Report\sig-alternate.cls"
-("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\epsfig.sty"
+
+("C:\cygwin64\home\avignesh\repos\DA-Assignment\Final Report\sig-alternate-10pt
+.cls" ("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\epsfig.sty"
 Package: epsfig 1999/02/16 v1.7a (e)psfig emulation (SPQR)
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\graphicx.sty"
@@ -121,8 +122,7 @@ LaTeX Font Info:    Redeclaring font encoding OMS on input line 567.
 LaTeX Info: Redefining \[ on input line 2665.
 LaTeX Info: Redefining \] on input line 2666.
 )
-Document Class 'sig-alternate' <23rd. May '12>. Modified by G.K.M. Tobin/Gerry 
-Murray
+Document Class 'sig-alternate' <3rd January '07>. Hacked by Anja Feldmann
 Based in part upon document Style `acmconf' <22 May 89>. Hacked 4/91 by
 shivers@cs.cmu.edu, 4/93 by theobald@cs.mcgill.ca
 Excerpts were taken from (Journal Style) 'esub2acm.cls'.
@@ -149,7 +149,11 @@ Questions on the style, SIGS policies, etc. to Adrienne Griscti griscti@acm.org
 \c@table=\count99
 \titleboxnotes=\toks23
 \titleboxnoteflag=\count100
-Document Class: sig-alternate 2012/05/23 - V2.5 - based on acmproc.cls V1.3 <No
+
+LaTeX Warning: You have requested document class `sig-alternate-10pt',
+               but the document class provides `sig-alternate'.
+
+Document Class: sig-alternate 2007/03/01 - V1.9 - based on acmproc.cls V1.3 <No
 v. 30 '99>
 ("C:\Program Files\MiKTeX 2.9\tex\latex\base\latexsym.sty"
 Package: latexsym 1998/08/17 v2.2e Standard LaTeX package (lasy symbols)
@@ -165,9 +169,8 @@ LaTeX Font Info:    Overwriting symbol font `lasy' in version `bold'
 \tntoksfour=\toks27
 \tntoksfive=\toks28
 \catcount=\count102
-\copyrightnotice=\toks29
-\conf=\toks30
-\confinfo=\toks31
+\conf=\toks29
+\confinfo=\toks30
 \c@part=\count103
 \c@section=\count104
 \c@subsection=\count105
@@ -175,31 +178,18 @@ LaTeX Font Info:    Overwriting symbol font `lasy' in version `bold'
 \c@paragraph=\count107
 
 Using 'Abbrev' bibliography style
-LaTeX Info: Redefining \cite on input line 1211.
 \bibindent=\dimen122
 \colcntr=\count108
-\saveb@x=\box29
-\copyrtyr=\toks32
-\acmcopyr=\toks33
-\boilerplate=\toks34
-\copyrightetc=\toks35
-("C:\Program Files\MiKTeX 2.9\tex\latex\base\fontenc.sty"
-Package: fontenc 2005/09/27 v1.99g Standard LaTeX package
-
-("C:\Program Files\MiKTeX 2.9\tex\latex\base\t1enc.def"
-File: t1enc.def 2005/09/27 v1.99g Standard LaTeX file
-LaTeX Font Info:    Redeclaring font encoding T1 on input line 43.
-)
-LaTeX Font Info:    Try loading font information for T1+aer on input line 100.
-
-("C:\Program Files\MiKTeX 2.9\tex\latex\ae\t1aer.fd"
-File: t1aer.fd 1997/11/16 Font definitions for T1/aer.
-)))
-("C:\Program Files\MiKTeX 2.9\tex\latex\tools\array.sty"
+\savebox=\box29
+\copyrtyr=\toks31
+\acmcopyr=\toks32
+\boilerplate=\toks33
+\copyrightetc=\toks34
+) ("C:\Program Files\MiKTeX 2.9\tex\latex\tools\array.sty"
 Package: array 2008/09/09 v2.4c Tabular extension package (FMi)
 \col@sep=\dimen123
 \extrarowheight=\dimen124
-\NC@list=\toks36
+\NC@list=\toks35
 \extratabsurround=\skip44
 \backup@length=\skip45
 )
@@ -250,14 +240,14 @@ Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 ("C:\Program Files\MiKTeX 2.9\tex\latex\float\float.sty"
 Package: float 2001/11/08 v1.3d Float enhancements (AL)
 \c@float@type=\count112
-\float@exts=\toks37
+\float@exts=\toks36
 \float@box=\box30
-\@float@everytoks=\toks38
+\@float@everytoks=\toks37
 \@floatcapt=\box31
 )
 ("C:\Program Files\MiKTeX 2.9\tex\latex\tools\enumerate.sty"
 Package: enumerate 1999/03/05 v3.00 enumerate extensions (DPC)
-\@enLab=\toks39
+\@enLab=\toks38
 )
 (C:\Users\avignesh\AppData\Roaming\MiKTeX\2.9\tex\latex\cite\cite.sty
 LaTeX Info: Redefining \cite on input line 302.
@@ -285,12 +275,12 @@ LaTeX Font Info:    ... okay on input line 58.
 \scratchbox=\box32
 \nofMPsegments=\count114
 \nofMParguments=\count115
-\everyMPshowfont=\toks40
+\everyMPshowfont=\toks39
 \MPscratchCnt=\count116
 \MPscratchDim=\dimen135
 \MPnumerator=\count117
 \makeMPintoPDFobject=\count118
-\everyMPtoPDFconversion=\toks41
+\everyMPtoPDFconversion=\toks40
 )
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: float package is loaded.
@@ -310,7 +300,12 @@ LaTeX Font Info:    Try loading font information for U+lasy on input line 89.
 File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
 )
 ("C:\cygwin64\home\avignesh\repos\DA-Assignment\Final Report\text/01-abstract.t
-ex")
+ex"
+Overfull \hbox (3.07733pt too wide) in paragraph at lines 3--4
+\ninept Physicists use high-energy par-ti-cle col-lid-ers such as the Large
+ []
+
+)
 ("C:\cygwin64\home\avignesh\repos\DA-Assignment\Final Report\text/02-introducti
 on.tex"
 Underfull \hbox (badness 10000) in paragraph at lines 4--5
@@ -333,32 +328,46 @@ Underfull \hbox (badness 10000) in paragraph at lines 10--11
  []
 
 
+Underfull \vbox (badness 3623) has occurred while \output is active []
+
+ [1{C:/Users/avignesh/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}
+
+
+]
+Overfull \hbox (4.86145pt too wide) in paragraph at lines 16--17
+\OT1/cmr/m/n/10 tions per sec-ond) for dif-fer-ent clas-si-fi-ca-tion schemes. 
+
+ []
+
+
 Underfull \hbox (badness 10000) in paragraph at lines 18--19
 
  []
 
-[1{C:/Users/avignesh/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}
-
-
-])
-("C:\cygwin64\home\avignesh\repos\DA-Assignment\Final Report\text/03-background
-.tex")
-("C:\cygwin64\home\avignesh\repos\DA-Assignment\Final Report\text/06-related.te
-x")
-("C:\cygwin64\home\avignesh\repos\DA-Assignment\Final Report\text/04-methodolog
-y.tex"
-LaTeX Font Info:    Try loading font information for T1+aett on input line 6.
- ("C:\Program Files\MiKTeX 2.9\tex\latex\ae\t1aett.fd"
-File: t1aett.fd 1997/11/16 Font definitions for T1/aett.
 )
-<figures/Distribution.png, id=12, 788.19469pt x 655.69969pt>
+("C:\cygwin64\home\avignesh\repos\DA-Assignment\Final Report\text/03-background
+.tex"
+Missing character: There is no Î in font cmr10!
+Missing character: There is no ³ in font cmr10!
+Missing character: There is no Î in font cmr10!
+Missing character: There is no ³ in font cmr10!
+)
+("C:\cygwin64\home\avignesh\repos\DA-Assignment\Final Report\text/06-related.te
+x"
+Overfull \hbox (7.30595pt too wide) in paragraph at lines 4--5
+[]\OT1/cmr/m/n/10 Detecting ex-otic par-ti-cles in high-energy physics (HEP)
+ []
+
+)
+("C:\cygwin64\home\avignesh\repos\DA-Assignment\Final Report\text/04-methodolog
+y.tex" [2] <figures/Distribution.png, id=18, 788.19469pt x 655.69969pt>
 File: figures/Distribution.png Graphic file (type png)
 
 <use figures/Distribution.png>
 Package pdftex.def Info: figures/Distribution.png used on input line 14.
 (pdftex.def)             Requested size: 432.00073pt x 359.37529pt.
- [2]
-<figures/corr.png, id=19, 953.81343pt x 886.06032pt>
+
+<figures/corr.png, id=20, 953.81343pt x 886.06032pt>
 File: figures/corr.png Graphic file (type png)
  <use figures/corr.png>
 Package pdftex.def Info: figures/corr.png used on input line 23.
@@ -368,78 +377,92 @@ Package pdftex.def Info: figures/corr.png used on input line 23.
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 
-Overfull \hbox (7.03416pt too wide) in paragraph at lines 32--33
-[]\T1/aer/m/n/9 In this sec-tion, we de-scribe the var-i-ous clas-si-fi-ca-tion
- schemes
+Underfull \vbox (badness 1158) has occurred while \output is active []
+
+ [3 <C:/cygwin64/home/avignesh/repos/DA-Assignment/Final Report/figures/corr.pn
+g>]
+Underfull \vbox (badness 1231) has occurred while \output is active []
+
+ [4 <C:/cygwin64/home/avignesh/repos/DA-Assignment/Final Report/figures/Distrib
+ution.png>]
+Underfull \vbox (badness 6396) has occurred while \output is active []
+
+
+Overfull \hbox (1.50041pt too wide) in paragraph at lines 101--102
+[]\OT1/cmr/m/n/10 Bagging tech-nique de-vel-oped by Brie-man in-volves cre-
  []
 
-
-Underfull \vbox (badness 5403) has occurred while \output is active []
-
-
-Overfull \hbox (5.57559pt too wide) in paragraph at lines 54--55
-\T1/aer/m/n/9 y-sis, ex-pect that this tech-nique uses quadratic de-ci-sion bou
-nd-
- []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [3 <C:/cygwin64/home/avignesh/repos/DA-Assignment/Final Report/figures/Distrib
-ution.png>] [4 <C:/cygwin64/home/avignesh/repos/DA-Assignment/Final Report/figu
-res/corr.png>])
+)
 ("C:\cygwin64\home\avignesh\repos\DA-Assignment\Final Report\text/05-results.te
 x"
 
-LaTeX Warning: Citation `Kaggle-Dataset' on page \thepage  undefined on input l
-ine 8.
+LaTeX Warning: Citation `Kaggle-Dataset' on page 5 undefined on input line 8.
 
 
-Overfull \hbox (3.7588pt too wide) in paragraph at lines 69--70
-[]\T1/aer/m/n/9 Among the two boost-ing tech-niques eval-u-ated, Multi-Boost-
+Overfull \hbox (1.59648pt too wide) in paragraph at lines 8--9
+\OT1/cmr/m/n/10 ing Repos-i-tory. This data set con-tains \OT1/cmr/m/it/10 2500
+00 \OT1/cmr/m/n/10 in-stances.
  []
 
-[5])
+[5]
+Overfull \hbox (5.58372pt too wide) in paragraph at lines 81--82
+\OT1/cmr/m/n/10 sev-eral tech-niques pro-duce sim-i-lar ac-cu-racy thereby mak-
+
+ []
+
+[6])
 ("C:\cygwin64\home\avignesh\repos\DA-Assignment\Final Report\text/07-conclusion
 .tex") ("C:\cygwin64\home\avignesh\repos\DA-Assignment\Final Report\CS5525.bbl"
 
 Package balance Warning: You have called \balance in second column
 (balance)                Columns might not be balanced.
 
-[6]
+[7]
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 110.
+
+ ("C:\Program Files\MiKTeX 2.9\tex\latex\base\omscmr.fd"
+File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 110.
+Missing character: There is no â in font cmr10!
+Missing character: There is no € in font cmr10!
+Missing character: There is no “ in font cmr10!
+
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 )
-Overfull \vbox (1.74394pt too high) has occurred while \output is active []
+Overfull \vbox (2.5pt too high) has occurred while \output is active []
 
-
-[7] ("C:\cygwin64\home\avignesh\repos\DA-Assignment\Final Report\CS5525.aux")
+ [8]
+("C:\cygwin64\home\avignesh\repos\DA-Assignment\Final Report\CS5525.aux")
 
 LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 3915 strings out of 493921
- 55310 string characters out of 3147273
- 124198 words of memory out of 3000000
- 7108 multiletter control sequences out of 15000+200000
- 50017 words of font info for 68 fonts, out of 3000000 for 9000
+ 3650 strings out of 493921
+ 52856 string characters out of 3147273
+ 122810 words of memory out of 3000000
+ 6861 multiletter control sequences out of 15000+200000
+ 43838 words of font info for 64 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
- 42i,12n,40p,1925b,294s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 42i,12n,40p,1920b,291s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/fontname/8r.enc}<C:/Program File
-s/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx9.pfb><C:/Program Files/MiKTeX 
-2.9/fonts/type1/public/amsfonts/cm/cmmi9.pfb><C:/Program Files/MiKTeX 2.9/fonts
-/type1/public/amsfonts/cm/cmr9.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/pub
-lic/amsfonts/cm/cmsy9.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfo
-nts/cm/cmti9.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cm
-tt9.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/helvetic/uhvb8a.pfb><C:/Pr
-ogram Files/MiKTeX 2.9/fonts/type1/urw/helvetic/uhvr8a.pfb><C:/Program Files/Mi
-KTeX 2.9/fonts/type1/urw/times/utmb8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/ty
-pe1/urw/times/utmr8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/times/utm
-ri8a.pfb>
-Output written on CS5525.pdf (7 pages, 270187 bytes).
+s/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Program Files/MiKTeX
+ 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Files/MiKTeX 2.9/font
+s/type1/public/amsfonts/cm/cmr9.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/pu
+blic/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/ams
+fonts/cm/cmsy9.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/
+cmti10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmtt10.p
+fb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/helvetic/uhvb8a.pfb><C:/Program
+ Files/MiKTeX 2.9/fonts/type1/urw/helvetic/uhvr8a.pfb><C:/Program Files/MiKTeX 
+2.9/fonts/type1/urw/times/utmb8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/u
+rw/times/utmr8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/times/utmri8a.
+pfb>
+Output written on CS5525.pdf (8 pages, 289128 bytes).
 PDF statistics:
- 75 PDF objects out of 1000 (max. 8388607)
+ 82 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  11 words of extra memory for PDF output out of 10000 (max. 10000000)
 
