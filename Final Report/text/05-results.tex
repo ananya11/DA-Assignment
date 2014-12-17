@@ -40,15 +40,30 @@ Our evaluation indicates that the choice of the decision tree algorithm matters 
 
 \paragraph{Boosting}
 
+Among the two boosting techniques evaluated, MultiBoosting was found to be better. Our results showed using REP Tree was better than Decision Stump Tree. For example, the accuracy increased from 76.8\% to 82.3\% for ADA boost, and from 77\% to 83.9\% for MultiBoost when REP Tree Classifier was used as the base classifier.
+
+\paragraph{Rotation Forest}
+
+Unlike bagging and boosting, the choice of the underlying decision tree classifier did not matter much. The J48 algorithm was marginally better than the REP Tree. The results for the best configuration is presented in the table.
+
+\paragraph{Classification via Clustering and Regression}
+The regression method is comparable to other linear methods explored earlier. The classification via clustering did not work well as expected with an ROC Area of just 0.628 which is the least value obtained among all classifiers explored.
+
 
 \subsection{Throughput Results}
 
 
-%\begin{table}[b]
-%\centering 
-%\caption{Mean error \% for application-independent models} 
-%\begin{tabular}{|r|c|c|c|c|} 
-%\hline 
+\begin{table*}[t]
+\centering 
+\caption{Accuracy results for different models} 
+\begin{tabular}{|l|ccc|ccc|cccc|} 
+\hline 
+Classifiers & Precision(s) & Recall(s) & f1-score(s) & Precision(b) & Recall(b) & f1-score(b) & Precision & Recall & f1-score & ROC Area \\
+\hline
+Naive Bayes & 0.00 & 0.00 & 0.00 & 0.00 & 0.00 & 0.00 & 0.00 & 0.00 & 0.00 & 0.00 
+\end{tabular}
+\label{tab:AI-Summary} 
+\end{table*}
 %Models & \multicolumn{2}{|c|}{C2075} & \multicolumn{2}{|c|}{K20c}  \\ 
 %\cline{2-5} 
 %	   & Basic & Temp-aware & Basic & Temp-aware \\ 
