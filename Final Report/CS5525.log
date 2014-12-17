@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2014.8.22)  17 DEC 2014 10:22
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2014.8.22)  17 DEC 2014 10:40
 entering extended mode
 **C:/cygwin64/home/avignesh/repos/DA-Assignment/Final*Report/CS5525.tex
 ("C:/cygwin64/home/avignesh/repos/DA-Assignment/Final Report/CS5525.tex"
@@ -300,12 +300,7 @@ LaTeX Font Info:    Try loading font information for U+lasy on input line 89.
 File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
 )
 ("C:\cygwin64\home\avignesh\repos\DA-Assignment\Final Report\text/01-abstract.t
-ex"
-Overfull \hbox (3.07733pt too wide) in paragraph at lines 3--4
-\ninept Physicists use high-energy par-ti-cle col-lid-ers such as the Large
- []
-
-)
+ex")
 ("C:\cygwin64\home\avignesh\repos\DA-Assignment\Final Report\text/02-introducti
 on.tex"
 Underfull \hbox (badness 10000) in paragraph at lines 4--5
@@ -346,12 +341,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 18--19
 
 )
 ("C:\cygwin64\home\avignesh\repos\DA-Assignment\Final Report\text/03-background
-.tex"
-Missing character: There is no Î in font cmr10!
-Missing character: There is no ³ in font cmr10!
-Missing character: There is no Î in font cmr10!
-Missing character: There is no ³ in font cmr10!
-)
+.tex")
 ("C:\cygwin64\home\avignesh\repos\DA-Assignment\Final Report\text/06-related.te
 x"
 Overfull \hbox (7.30595pt too wide) in paragraph at lines 4--5
@@ -360,14 +350,14 @@ Overfull \hbox (7.30595pt too wide) in paragraph at lines 4--5
 
 )
 ("C:\cygwin64\home\avignesh\repos\DA-Assignment\Final Report\text/04-methodolog
-y.tex" [2] <figures/Distribution.png, id=18, 788.19469pt x 655.69969pt>
+y.tex" [2] <figures/Distribution.png, id=19, 788.19469pt x 655.69969pt>
 File: figures/Distribution.png Graphic file (type png)
 
 <use figures/Distribution.png>
 Package pdftex.def Info: figures/Distribution.png used on input line 14.
 (pdftex.def)             Requested size: 432.00073pt x 359.37529pt.
 
-<figures/corr.png, id=20, 953.81343pt x 886.06032pt>
+<figures/corr.png, id=21, 953.81343pt x 886.06032pt>
 File: figures/corr.png Graphic file (type png)
  <use figures/corr.png>
 Package pdftex.def Info: figures/corr.png used on input line 23.
@@ -450,19 +440,19 @@ Here is how much of TeX's memory you used:
  42i,12n,40p,1920b,291s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/fontname/8r.enc}<C:/Program File
 s/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Program Files/MiKTeX
- 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Files/MiKTeX 2.9/font
-s/type1/public/amsfonts/cm/cmr9.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/pu
-blic/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/ams
-fonts/cm/cmsy9.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/
-cmti10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmtt10.p
-fb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/helvetic/uhvb8a.pfb><C:/Program
- Files/MiKTeX 2.9/fonts/type1/urw/helvetic/uhvr8a.pfb><C:/Program Files/MiKTeX 
-2.9/fonts/type1/urw/times/utmb8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/u
-rw/times/utmr8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/times/utmri8a.
-pfb>
-Output written on CS5525.pdf (8 pages, 289128 bytes).
+ 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Program Files/MiKTeX 2.9/fon
+ts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/
+public/amsfonts/cm/cmr9.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/ams
+fonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm
+/cmsy9.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti10.p
+fb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmtt10.pfb><C:/P
+rogram Files/MiKTeX 2.9/fonts/type1/urw/helvetic/uhvb8a.pfb><C:/Program Files/M
+iKTeX 2.9/fonts/type1/urw/helvetic/uhvr8a.pfb><C:/Program Files/MiKTeX 2.9/font
+s/type1/urw/times/utmb8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/times
+/utmr8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/times/utmri8a.pfb>
+Output written on CS5525.pdf (8 pages, 297739 bytes).
 PDF statistics:
- 82 PDF objects out of 1000 (max. 8388607)
+ 86 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  11 words of extra memory for PDF output out of 10000 (max. 10000000)
 
