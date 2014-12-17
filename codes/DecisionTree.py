@@ -28,14 +28,24 @@ from sklearn.cross_validation import train_test_split
 from sklearn.metrics import classification_report
 from sklearn.metrics import f1_score
 import re
+from sklearn.preprocessing import Imputer
 
+
+def getMEanMissingData(X):
+    imp = Imputer(missing_values='NaN', strategy='mean', axis=0)
+    imp.fit(X.shape)
+    df = pd.DataFrame(X)
+    df[df == -999] = np.nan
+    print(df)
+    return imp.transform(df.values)
+    
 
 ''' Conversion background = 0 
         signal = 1
 
 '''
 
-tmp = pd.read_csv('training.csv', index_col='EventId')
+tmp = pd.read_csv('large.csv', index_col='EventId')
 
 
 def labelTonumber(l):
@@ -46,6 +56,10 @@ def labelTonumber(l):
 
 
 tmp['Label'] = tmp['Label'].map(labelTonumber)
+
+'''
+    Handle missing data
+'''
 
 ignore_idx = pd.Index(['Label', 'Weight'])
 
@@ -63,10 +77,10 @@ opt_min_split = None
 opt_f1_score = None
 
 # Original value used before finding correlation
-min_splits = range(1, 10, 1) + range(10, 100, 10) + range(100, 1000, 100) + range(1000, 10000, 1000)
+#min_splits = range(1, 10, 1) + range(10, 100, 10) + range(100, 1000, 100) + range(1000, 10000, 1000)
 
 #new value 
-#min_splits = range(100, 1500, 100)
+min_splits = range(100, 600, 100)
 
 def extract_f1_score(text):
     index = text.find('avg')
@@ -76,6 +90,7 @@ def extract_f1_score(text):
     
 # split into training and test data
 # 80 - 20 split.
+
 train_data, test_data, train_labels, test_labels = train_test_split(data, labels, test_size=0.2, random_state=42)
 print("Removing colinearlity on data")
 
@@ -150,4 +165,3 @@ for crit in ['gini']:
                 opt_f1_score = f1
                 opt_min_split = min_samples
                 opt_criterion = crit
-        
