@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2014.8.22)  17 DEC 2014 10:40
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2014.8.22)  17 DEC 2014 11:02
 entering extended mode
 **C:/cygwin64/home/avignesh/repos/DA-Assignment/Final*Report/CS5525.tex
 ("C:/cygwin64/home/avignesh/repos/DA-Assignment/Final Report/CS5525.tex"
@@ -367,20 +367,20 @@ Package pdftex.def Info: figures/corr.png used on input line 23.
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 
-Underfull \vbox (badness 1158) has occurred while \output is active []
+Underfull \vbox (badness 7740) has occurred while \output is active []
 
  [3 <C:/cygwin64/home/avignesh/repos/DA-Assignment/Final Report/figures/corr.pn
 g>]
-Underfull \vbox (badness 1231) has occurred while \output is active []
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [4 <C:/cygwin64/home/avignesh/repos/DA-Assignment/Final Report/figures/Distrib
 ution.png>]
-Underfull \vbox (badness 6396) has occurred while \output is active []
-
-
 Overfull \hbox (1.50041pt too wide) in paragraph at lines 101--102
 []\OT1/cmr/m/n/10 Bagging tech-nique de-vel-oped by Brie-man in-volves cre-
  []
+
+
+Underfull \vbox (badness 2772) has occurred while \output is active []
 
 )
 ("C:\cygwin64\home\avignesh\repos\DA-Assignment\Final Report\text/05-results.te
@@ -395,12 +395,15 @@ Overfull \hbox (1.59648pt too wide) in paragraph at lines 8--9
  []
 
 [5]
-Overfull \hbox (5.58372pt too wide) in paragraph at lines 81--82
+Underfull \vbox (badness 1577) has occurred while \output is active []
+
+ [6]
+Overfull \hbox (5.58372pt too wide) in paragraph at lines 86--87
 \OT1/cmr/m/n/10 sev-eral tech-niques pro-duce sim-i-lar ac-cu-racy thereby mak-
 
  []
 
-[6])
+)
 ("C:\cygwin64\home\avignesh\repos\DA-Assignment\Final Report\text/07-conclusion
 .tex") ("C:\cygwin64\home\avignesh\repos\DA-Assignment\Final Report\CS5525.bbl"
 
@@ -422,10 +425,10 @@ Missing character: There is no “ in font cmr10!
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 )
-Overfull \vbox (2.5pt too high) has occurred while \output is active []
+Overfull \vbox (1.94444pt too high) has occurred while \output is active []
 
- [8]
-("C:\cygwin64\home\avignesh\repos\DA-Assignment\Final Report\CS5525.aux")
+
+[8] ("C:\cygwin64\home\avignesh\repos\DA-Assignment\Final Report\CS5525.aux")
 
 LaTeX Warning: There were undefined references.
 
@@ -433,11 +436,11 @@ LaTeX Warning: There were undefined references.
 Here is how much of TeX's memory you used:
  3650 strings out of 493921
  52856 string characters out of 3147273
- 122810 words of memory out of 3000000
+ 125810 words of memory out of 3000000
  6861 multiletter control sequences out of 15000+200000
  43838 words of font info for 64 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
- 42i,12n,40p,1920b,291s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 42i,12n,40p,1923b,291s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/fontname/8r.enc}<C:/Program File
 s/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Program Files/MiKTeX
  2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Program Files/MiKTeX 2.9/fon
@@ -450,7 +453,7 @@ rogram Files/MiKTeX 2.9/fonts/type1/urw/helvetic/uhvb8a.pfb><C:/Program Files/M
 iKTeX 2.9/fonts/type1/urw/helvetic/uhvr8a.pfb><C:/Program Files/MiKTeX 2.9/font
 s/type1/urw/times/utmb8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/times
 /utmr8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/times/utmri8a.pfb>
-Output written on CS5525.pdf (8 pages, 297739 bytes).
+Output written on CS5525.pdf (8 pages, 298166 bytes).
 PDF statistics:
  86 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
