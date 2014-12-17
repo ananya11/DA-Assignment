@@ -1,12 +1,17 @@
 \section{Introduction}
 \label{sec:introduction}
 
-Introduction goes here
-
-%\begin{figure}[h]
-%\centering
-%\includegraphics[width=1.0\columnwidth]{accelerators-top500}
-%\caption{Number of Systems Using Accelerators in the Green500 Lists.}
-%\label{fig:green500-trends}
-%\end{figure}
+Physicists use high-energy particle colliders such as the Large Hadron Collider (LHC) to produce new particles in order to understand the elementary structure of matter. In these colliders protons collide at high speed to produce several interesting particles which quickly decays into other stable particles. The particles produced in these experiments are identical in many aspects but differ in their kinematic features. Of particular interest in the Higgs-Boson particle which aids in understanding the fundamental structure of matter. Studying this particle is expected to provide insight into the functioning of universe and its possible fates. While the “real world” impact of the particle is not known yet, the scientific impact is so huge that billions of dollars has been invested in constructing colliders that produce this particle. Identifying the Higgs boson particle reliably and efficiently enables solving the bigger problem of studying the particle. 
+One fundamental limitation of using magnetic detectors is their inability to distinguish signal (Higgs-Boson producing collision) from background noise (other collisions) when the signal-to-background ratio is too low. An alternative approach is to measure the properties of stable particles and infer the decaying particle originally produced by collision. For this purpose, scientists have created models of Higgs-Boson and other particles, simulate their decay using these models, and record the kinematic properties of the stable particles produced at the end. Based on these kinematic properties, they can create models to find the originally produced particles. This model can then be used in real accelerators for real-time detection of Higgs-Boson particle. Based on the above, we formally state our data mining task as follows.
+\textbf{Data Mining Task.} The problem of interest is classification. Given the kinematic features of stable particles produced in a collision, we classify it as signal (decays from Higgs-Boson) or background (otherwise).
+Given the rarity in occurrence of signal events and their importance in understanding the nature of matter, the primary goal is to identify most signal events correctly. Secondarily, since millions of events occur every second, we are also interested in identifying techniques that maximize the number of classifications per second. 
+Our major contributions are as follows:
+\begin{enum}
+\item	Implementation of several classifiers covering the following broad categories of classifiers for Higgs-Boson detection: Bayesian, tree-based, instance-based, deep learning, ensemble methods, meta-classifiers.
+\item	Comparison of classification accuracy for the different classification schemes.
+\item	Evaluation of throughput (# classifications per second) for the different classification schemes.
+\end{enum}
+Our contributions help in identifying the appropriate classifiers for the given task and provides clarification on the complexity of features necessary for classification.
+Our major findings are as follows: <Fill in interesting results here>
+The rest of the paper is organized as follows. Section II provides the necessary background in theoretical physics. Section III describes the related work. Section IV describes our approach. We present our results in Section V and conclude in section VI.
 
