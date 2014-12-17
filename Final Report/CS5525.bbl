@@ -49,6 +49,11 @@ S.~{Chatrchyan}, V.~{Khachatryan}, A.~M. {Sirunyan}, A.~{Tumasyan}, W.~{Adam},
   experiment at the LHC}.
 \newblock {\em Physics Letters B}, 716:30--61, Sept. 2012.
 
+\bibitem{Kaggle}
+C.~G. I. G. B. K. D.~R. Claire Adam-Bourdarios, Glen~Cowan.
+\newblock {Learning to discover: the Higgs boson machine learning challenge}.
+\newblock 2014.
+
 \bibitem{Cutts-NN1}
 D.~Cutts, J.~Hoftun, A.~Sornborger, R.~Astur, C.~R. Johnson, and R.~T. Zeller.
 \newblock The use of neural networks in the d0 data acquisition system.

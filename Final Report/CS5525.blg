@@ -1,5 +1,19 @@
 This is BibTeX, Version 0.99dThe top-level auxiliary file: CS5525.aux
 The style file: abbrv.bst
 Database file #1: bib/sigproc.bib
-Warning--I didn't find a database entry for "Kaggle-Dataset"
-(There was 1 warning)
+Warning--string name "jully" is undefined
+--line 354 of file bib/sigproc.bib
+Too many commas in name 1 of "Claire Adam-Bourdarios, Glen Cowan, Cecile Germain, Isabelle Guyond, Balazs Kegl, David Rousse" for entry Kaggle
+while executing---line 1049 of file abbrv.bst
+Too many commas in name 1 of "Claire Adam-Bourdarios, Glen Cowan, Cecile Germain, Isabelle Guyond, Balazs Kegl, David Rousse" for entry Kaggle
+while executing---line 1049 of file abbrv.bst
+Too many commas in name 1 of "Claire Adam-Bourdarios, Glen Cowan, Cecile Germain, Isabelle Guyond, Balazs Kegl, David Rousse" for entry Kaggle
+while executing---line 1049 of file abbrv.bst
+Too many commas in name 1 of "Claire Adam-Bourdarios, Glen Cowan, Cecile Germain, Isabelle Guyond, Balazs Kegl, David Rousse" for entry Kaggle
+while executing---line 1090 of file abbrv.bst
+Too many commas in name 1 of "Claire Adam-Bourdarios, Glen Cowan, Cecile Germain, Isabelle Guyond, Balazs Kegl, David Rousse" for entry Kaggle
+while executing---line 1090 of file abbrv.bst
+Too many commas in name 1 of "Claire Adam-Bourdarios, Glen Cowan, Cecile Germain, Isabelle Guyond, Balazs Kegl, David Rousse" for entry Kaggle
+while executing---line 1090 of file abbrv.bst
+Warning--empty journal in Kaggle
+(There were 6 error messages)
