@@ -51,11 +51,11 @@ Bagging & 0.79 & 0.74 & 0.77 & 0.87 & 0.9 & 0.88 & 0.84 & 0.85 & 0.84 & 0.91 \\
 While using the raw and derived features, we did not see any notable impact of the number of neighbors on the accuracy. Also, removing irrelevant and noisy features did not help (F1-score was always around 0.70). However, simply by using principal components improved the accuracy to over 74\%. Reducing the number of principal components to four increased the accuracy to over 77.5\%. Also, increasing the number of neighbors improved the accuracy further to 80\%. The best results were obtained for number of principal components = 4 and number of neighbors = 20. The corresponding results are tabulated in the table.
 
 \subsubsection{Neural Network}
-As mentioned before we used multiple NN technics to classify the data between a signal and a background, our results were almost similar. Among the 4 neural networks used here, cascade forward network has the best results --  ROC curve (AUC) as 0.91, precision and recall as 0.84 and 0.85 respectively.  
+As mentioned before we used multiple NN technics to classify the data between a signal and a background but the classification results are very similar. Among the 4 neural networks used here, cascade forward network has the best results --  ROC curve (AUC) is 0.91, precision and recall s 0.84 and 0.85 respectively.  
 
 We noticed that for each network model, the testing performance stops increasing with the increase in the number of neurons in the hidden layers after a certain point . Liu et al.~\cite{NN-Result} call this as the stop criterion. Beyond this point the neural network overestimates the complexity of the target problem which causes overfitting.
 
-Recently there has been substantial interest in feed forward network with many layers. However, we restricted ourselves to only two layers (one hidden and one output layer) as we noticed an increase in overfitting when the number of layers in a feed forward network is greater than 2.  Similarly in the custom network that we designed, the neural network's performance improves when we increase the number of hidden layers from 2 to 3, the AUC is 0.89 but it is still less than other ANN model with 2 layers. 
+Recently there has been substantial interest in feed forward network with many layers. However, we restricted ourselves to only two layers (one hidden and one output layer) as we noticed an increase in overfitting when the number of layers in a feed forward network is greater than 2.  Similarly in the custom network that we designed, the neural network's performance improves when we increase the number of hidden layers from 2 to 3, the AUC is 0.89 but it is still less than other ANN models with 2 layers. 
 
 
 \subsubsection{Ensemble Methods and Meta-classifiers}
@@ -66,7 +66,7 @@ Our evaluation indicates that the choice of the decision tree algorithm matters 
 
 \paragraph{Boosting}
 
-Among the two boosting techniques evaluated, MultiBoosting was found to be better. Our results showed using REP Tree was better than Decision Stump Tree. For example, the accuracy increased from 76.8\% to 82.3\% for ADA boost, and from 77\% to 83.9\% for MultiBoost when REP Tree Classifier was used as the base classifier.
+Among the two boosting techniques evaluated, MultiBoosting is found to be better. Our results showed REP Tree is better than Decision Stump Tree. For example, the accuracy increased from 76.8\% to 82.3\% for ADA boost, and from 77\% to 83.9\% for MultiBoost when REP Tree Classifier is used as the base classifier.
 
 \paragraph{Rotation Forest}
 
@@ -78,7 +78,7 @@ The regression method is comparable to other linear methods explored earlier. Th
 
 \subsection{Throughput Results}
 
-A particle physics accelerator produces millions to billions of events in a second. The classifier has to be really fast to process that many events in real time. While several dedicated ASICs can be used to perform real time classification for more sophisticated techniques if the accuracy improvement warrants them, in our case several techniques produce similar accuracy thereby making decisions from throughput results necessary. The ensemble methods and neural networks all have similar accuracy. While it is expensive to construct a neural network, it is just an one-time cost. Ensemble methods on the other hand are relatively faster to construct, however since several models have to be evaluated before a decision is made, its prediction overhead is very high~\ref{tab:Throughput}. This translates to low throughput. On the other hand, neural networks show much higher throughput even though it takes a long time to construct the model.
+A particle physics accelerator produces millions to billions of events in a second. The classifier has to be really fast to process that many events in real time. While several dedicated ASICs can be used to perform real time classification for more sophisticated techniques if the accuracy improvement warrants them. In our case several techniques produce similar accuracy thereby making decisions from throughput results necessary. The ensemble methods and neural networks all have similar accuracy. While it is expensive to construct a neural network, it is just an one-time cost. Ensemble methods on the other hand are relatively faster to construct, however since several models have to be evaluated before a decision is made, its prediction overhead is very high~\ref{tab:Throughput}. This translates to low throughput. On the other hand, neural networks show much higher throughput even though it takes a long time to construct the model.
 
 
 \begin{table}[h]
