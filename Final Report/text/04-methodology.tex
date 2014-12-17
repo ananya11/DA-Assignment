@@ -63,7 +63,28 @@ This classifier is based on the classification and regression trees (CART) techn
 This classifier is based on the k-nearest neighbor (kNN) technique by aha et al.~\cite{kNN}. In this technique <describe technique here>. <Describe parameter tuning here>.
 
 
-\subsubsection{Deep Learning}
+\subsubsection{Neural Networks}
+
+For Higgs Boson project, we used both deep and shallow neural networks. We analyzed our data using multiple networks each of which are discussed below. 
+
+
+\paragraph{feedforwardnet.} Feed Forward networks consist of a series of layers. The first layer has a connection from the network input. Each subsequent layer has a connection from the previous layer. The final layer is the output layer which produces the network output. 
+The hidden layer is of size 60. The transfer function used in this layer is 'tansig' (tan-Sigmoid Transfer Function). Tansig is a neural network transfer function which calculates a layer's output from its net input. The output layer produces only 1 output ( 0 or 1). The transfer function used in this layer is 'purelin'. It is a linear transfer function which calculates the final output.
+
+
+\parapgrah{patternet.} It is a Pattern Recognition Network which is trained to classify inputs from target classes. The target data should consist of a vector of 0 or 1. It contains one hidden layer of size 40. The output layer is of size 1.
+
+
+\paragraph{cascadeforwardnet.}  Cascade Forward Network is very similar to feed forward networks but includes a connection from the network input and from every previous layer to following layers. The output layer has two inputs : one from the previous hidden layer and the other from the input. The hidden layer is of size 80. The rest of the network is same as that of FeedForwardNetwork.  
+
+
+\paragraph{Custom Neural Network}  We designed a deep neural network with 4 layers: three hidden layers, one output layer. All the hidden layers are connected to the network input.  There is no direct connection between any of the three hidden layers. The output layer takes 4 inputs, three of the inputs are outputs of each hidden layer. The output layer is also recursive layer. So it's own output is fed back as its fourth input. The network model is trained using 'trainrp' network training function which updates weight and bias according to resilient back propagation algorithm (Rprop).
+The 1st hidden layer contains 20 neurons. The transfer function used in this layer is 'tansig' (tan-Sigmoid Transfer Function). The second hidden layer has 10 neurons. The transfer function used here is 'logsig'. It is log-sigmoid transfer function. The third hidden layer has 20 neurons. The transfer function used here is again 'tansig'.  The output layer produces only 1 output ( 0 or 1). The transfer function used in this layer is 'purelin'.
+
+
+The number of layers in a network, number of neurons in each layer, transfer function to be used to calculate output of each layer, etc are based on heuristics. 
+
+
 
 
 \subsubsection{Meta Classifiers and Ensemble Methods}
