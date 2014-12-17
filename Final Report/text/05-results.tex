@@ -45,11 +45,11 @@ As expected, the removal of correlating features had a positive impact on the ac
 
 \subsubsection{Function-based Classifiers}
 
-For this class of techniques, we explored varying the features used for classification. Our results suggest that the number of features used for classification did not affect the accuracy of the classifier. The best results obtained for this technique is shown in Table.~\ref{tab:Summary}.
+For this class of techniques, we explored varying the features used for classification. Our results suggest that the number of features used for classification did not affect the accuracy of the classifier. The best results obtained for this technique is shown in Table~\ref{tab:Summary}.
 
 \subsubsection{Tree-based Classifiers}
 
-For the tree-based classifiers, we did not see any difference for the two criterion (gini and entropy) explored. The number of samples used to form the split, however, had a significant impact and the best performance was achieved when this value was 300. The corresponding accuracy metrics are shown in Table.~\ref{tab:Summary}.
+For the tree-based classifiers, we did not see any difference for the two criterion (gini and entropy) explored. The number of samples used to form the split, however, had a significant impact and the best performance was achieved when this value was 300. The corresponding accuracy metrics are shown in Table~\ref{tab:Summary}.
 
 \subsubsection{Instance-based Classifiers}
 
@@ -58,7 +58,7 @@ While using the raw and derived features, we did not see any notable impact of t
 \subsubsection{Neural Network}
 As mentioned before we used multiple NN technics to classify the data between a signal and a background but the classification results are very similar. Among the 4 neural networks used here, cascade forward network has the best results --  ROC curve (AUC) is 0.91, precision and recall s 0.84 and 0.85 respectively.  
 
-We noticed that for each network model, the testing performance stops increasing with the increase in the number of neurons in the hidden layers after a certain point . Liu et al.~\cite{NN-Result} call this as the stop criterion. Beyond this point the neural network overestimates the complexity of the target problem which causes overfitting.
+We noticed that for each network model, the testing performance stops increasing with the increase in the number of neurons in the hidden layers after a certain point. Liu et al.~\cite{NN-Result} call this as the stop criterion. Beyond this point the neural network overestimates the complexity of the target problem which causes overfitting.
 
 Recently there has been substantial interest in feed forward network with many layers. However, we restricted ourselves to only two layers (one hidden and one output layer) as we noticed an increase in overfitting when the number of layers in a feed forward network is greater than 2.  Similarly in the custom network that we designed, the neural network's performance improves when we increase the number of hidden layers from 2 to 3, the AUC is 0.89 but it is still less than other ANN models with 2 layers. 
 
@@ -67,7 +67,7 @@ Recently there has been substantial interest in feed forward network with many l
 
 \paragraph{Bagging}
 
-Our evaluation indicates that the choice of the decision tree algorithm matters the most when applying the bagging technique. REP tree showed a 20\% better accuracy than a Decision Stump Tree. The effect of increasing the number of iterations was low, changing the bag size negligible for reasonable sizes. The best AUC value obtained was 0.91 (Corresponding f1-score was 0.84) when using REP tree with 50\% bag size, and 20 iterations. The details of the result is presented in Table.~\ref{tab:Summary}.
+Our evaluation indicates that the choice of the decision tree algorithm matters the most when applying the bagging technique. REP tree showed a 20\% better accuracy than a Decision Stump Tree. The effect of increasing the number of iterations was low, changing the bag size negligible for reasonable sizes. The best AUC value obtained was 0.91 (Corresponding f1-score was 0.84) when using REP tree with 50\% bag size, and 20 iterations. The details of the result is presented in Table~\ref{tab:Summary}.
 
 \paragraph{Boosting}
 
@@ -75,7 +75,7 @@ Among the two boosting techniques evaluated, MultiBoosting is found to be better
 
 \paragraph{Rotation Forest}
 
-Unlike bagging and boosting, the choice of the underlying decision tree classifier did not matter much. The J48 algorithm was marginally better than the REP Tree. The results for the best configuration is presented in Table.~\ref{tab:Summary}.
+Unlike bagging and boosting, the choice of the underlying decision tree classifier did not matter much. The J48 algorithm was marginally better than the REP Tree. The results for the best configuration is presented in Table~\ref{tab:Summary}.
 
 \paragraph{Classification via Clustering and Regression}
 The regression method is comparable to other linear methods explored earlier. The classification via clustering did not work well as expected with an ROC Area of just 0.628 which is the least value obtained among all classifiers explored.
