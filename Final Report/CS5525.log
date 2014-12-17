@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2014.8.22)  17 DEC 2014 00:09
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2014.8.22)  17 DEC 2014 02:48
 entering extended mode
 **C:/cygwin64/home/avignesh/repos/DA-Assignment/Final*Report/CS5525.tex
 ("C:/cygwin64/home/avignesh/repos/DA-Assignment/Final Report/CS5525.tex"
@@ -339,12 +339,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 19--20
 
 )
 ("C:\cygwin64\home\avignesh\repos\DA-Assignment\Final Report\text/03-background
-.tex")
-("C:\cygwin64\home\avignesh\repos\DA-Assignment\Final Report\text/06-related.te
-x" [1{C:/Users/avignesh/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}
+.tex" [1{C:/Users/avignesh/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}
 
 
 ])
+("C:\cygwin64\home\avignesh\repos\DA-Assignment\Final Report\text/06-related.te
+x")
 ("C:\cygwin64\home\avignesh\repos\DA-Assignment\Final Report\text/04-methodolog
 y.tex"
 LaTeX Font Info:    Try loading font information for T1+aett on input line 6.
@@ -364,26 +364,21 @@ File: figures/corr.png Graphic file (type png)
 Package pdftex.def Info: figures/corr.png used on input line 23.
 (pdftex.def)             Requested size: 240.0pt x 222.94768pt.
 
+[2 <C:/cygwin64/home/avignesh/repos/DA-Assignment/Final Report/figures/corr.png
+>]
 Overfull \hbox (7.03416pt too wide) in paragraph at lines 32--33
 []\T1/aer/m/n/9 In this sec-tion, we de-scribe the var-i-ous clas-si-fi-ca-tion
  schemes
  []
 
-[2 <C:/cygwin64/home/avignesh/repos/DA-Assignment/Final Report/figures/corr.png
->]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [3 <C:/cygwin64/home/avignesh/repos/DA-Assignment/Final Report/figures/Distrib
-ution.png>]
-Overfull \hbox (16.78226pt too wide) in paragraph at lines 103--104
-[]\T1/aer/m/n/9 Based on ADA Boost-ing de-vel-oped by Fre-und and Schapire [9].
-
- []
+[3 <C:/cygwin64/home/avignesh/repos/DA-Assignment/Final Report/figures/Distribu
+tion.png>]
+Underfull \vbox (badness 6396) has occurred while \output is active []
 
 
-Overfull \hbox (18.02527pt too wide) in paragraph at lines 107--108
-[]\T1/aer/m/n/9 Based on the Multi-Boost-ing tech-nique de-vel-oped by Webb [20
-]. 
+Overfull \hbox (21.17485pt too wide) in paragraph at lines 103--104
+\T1/aer/m/n/9 Schapire [9] and Multi-Boost-ing tech-nique de-vel-oped by Webb [
+20].
  []
 
 )
@@ -393,25 +388,14 @@ x"
 LaTeX Warning: Citation `Kaggle-Dataset' on page \thepage  undefined on input l
 ine 8.
 
-)
+[4])
 ("C:\cygwin64\home\avignesh\repos\DA-Assignment\Final Report\text/07-conclusion
 .tex") ("C:\cygwin64\home\avignesh\repos\DA-Assignment\Final Report\CS5525.bbl"
 
-Package balance Warning: You have called \balance in second column
-(balance)                Columns might not be balanced.
-
-[4]
-
 LaTeX Warning: Citation `cart93' on page \thepage  undefined on input line 35.
 
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-)
-Overfull \vbox (1.24596pt too high) has occurred while \output is active []
-
-
-[5] ("C:\cygwin64\home\avignesh\repos\DA-Assignment\Final Report\CS5525.aux")
+[5]) [6] ("C:\cygwin64\home\avignesh\repos\DA-Assignment\Final Report\CS5525.au
+x")
 
 LaTeX Warning: There were undefined references.
 
@@ -419,7 +403,7 @@ LaTeX Warning: There were undefined references.
 Here is how much of TeX's memory you used:
  3911 strings out of 493921
  55254 string characters out of 3147273
- 122198 words of memory out of 3000000
+ 125198 words of memory out of 3000000
  7104 multiletter control sequences out of 15000+200000
  50017 words of font info for 68 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
@@ -435,9 +419,9 @@ ogram Files/MiKTeX 2.9/fonts/type1/urw/helvetic/uhvr8a.pfb><C:/Program Files/Mi
 KTeX 2.9/fonts/type1/urw/times/utmb8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/ty
 pe1/urw/times/utmr8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/times/utm
 ri8a.pfb>
-Output written on CS5525.pdf (5 pages, 255391 bytes).
+Output written on CS5525.pdf (6 pages, 259470 bytes).
 PDF statistics:
- 67 PDF objects out of 1000 (max. 8388607)
+ 70 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  11 words of extra memory for PDF output out of 10000 (max. 10000000)
 

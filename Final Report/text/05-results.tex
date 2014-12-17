@@ -22,6 +22,8 @@ All experiments were run on a MacBook Pro using a \emph{4-core} Intel Core i7 pr
 
 \subsubsection{Instance-based Classifiers}
 
+While using the raw and derived features, we did not see any notable impact of the number of neighbors on the accuracy. Also, removing irrelevant and noisy features did not help (F1-score was always around 0.70). However, simply by using principal components improved the accuracy to over 74\%. Reducing the number of principal components to four increased the accuracy to over 77.5\%. Also, increasing the number of neighbors improved the accuracy further to 80\%. The best results were obtained for number of principal components = 4 and number of neighbors = 20. The corresponding results are tabulated in the table.
+
 \subsubsection{Neural Network}
 As mentioned before we used multiple NN technics to classify the data between a signal and a background, our results were almost similar. Among the 4 neural networks used here, feedforward and cascade forward network has the best ROC curve (AUC) of 0.91, signal precision and recall as 0.79 and 0.74 respectively.  
 
@@ -31,6 +33,13 @@ Recently there has been substantial interest in feed forward network with many l
 
 
 \subsubsection{Ensemble Methods and Meta-classifiers}
+
+\paragraph{Bagging}
+
+Our evaluation indicates that the choice of the decision tree algorithm matters the most when applying the bagging technique. REP tree showed a 20\% better accuracy than a Decision Stump Tree. The effect of increasing the number of iterations was low, changing the bag size negligible for reasonable sizes. The best AUC value obtained was 0.91 (Corresponding f1-score was 0.84) when using REP tree with 50\% bag size, and 20 iterations. The details of the result is presented in the table.
+
+\paragraph{Boosting}
+
 
 \subsection{Throughput Results}
 

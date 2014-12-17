@@ -60,7 +60,7 @@ This classifier is based on the classification and regression trees (CART) techn
 
 \paragraph{k-Nearest Neighbor}
 
-This classifier is based on the k-nearest neighbor (kNN) technique by aha et al.~\cite{kNN}. In this technique <describe technique here>. <Describe parameter tuning here>.
+For the instance-based classifier we explore the k-nearest neighbor (kNN) technique~\cite{kNN}. This is a lazy classification technique in which the \emph{k} nearest neighbors are looked at to decide the class of a new instance. This technique has practically no training overhead. The classification overhead is very high though, particularly if the distance for all previously seen instances are computed exhaustively. Since this technique is known to perform bad with noisy attributes and irrelevant attributes, we explore removing such attributes from our dataset. We also tried to construct the classifier using top few principal components in order to keep only relevant features. In addition, we also experiment with the number of neighbors considered.
 
 
 \subsubsection{Neural Networks}
@@ -68,14 +68,14 @@ This classifier is based on the k-nearest neighbor (kNN) technique by aha et al.
 For Higgs Boson project, we used both deep and shallow neural networks. We analyzed our data using multiple networks each of which are discussed below. 
 
 
-\paragraph{feedforwardnet.} Feed Forward networks consist of a series of layers. The first layer has a connection from the network input. Each subsequent layer has a connection from the previous layer. The final layer is the output layer which produces the network output. 
+\paragraph{feedforwardnet} Feed Forward networks consist of a series of layers. The first layer has a connection from the network input. Each subsequent layer has a connection from the previous layer. The final layer is the output layer which produces the network output. 
 The hidden layer is of size 60. The transfer function used in this layer is 'tansig' (tan-Sigmoid Transfer Function). Tansig is a neural network transfer function which calculates a layer's output from its net input. The output layer produces only 1 output ( 0 or 1). The transfer function used in this layer is 'purelin'. It is a linear transfer function which calculates the final output.
 
 
-\paragraph{patternet.} It is a Pattern Recognition Network which is trained to classify inputs from target classes. The target data should consist of a vector of 0 or 1. It contains one hidden layer of size 40. The output layer is of size 1.
+\paragraph{patternet} It is a Pattern Recognition Network which is trained to classify inputs from target classes. The target data should consist of a vector of 0 or 1. It contains one hidden layer of size 40. The output layer is of size 1.
 
 
-\paragraph{cascadeforwardnet.}  Cascade Forward Network is very similar to feed forward networks but includes a connection from the network input and from every previous layer to following layers. The output layer has two inputs : one from the previous hidden layer and the other from the input. The hidden layer is of size 80. The rest of the network is same as that of FeedForwardNetwork.  
+\paragraph{cascadeforwardnet}  Cascade Forward Network is very similar to feed forward networks but includes a connection from the network input and from every previous layer to following layers. The output layer has two inputs : one from the previous hidden layer and the other from the input. The hidden layer is of size 80. The rest of the network is same as that of FeedForwardNetwork.  
 
 
 \paragraph{Custom Neural Network}  We designed a deep neural network with 4 layers: three hidden layers, one output layer. All the hidden layers are connected to the network input.  There is no direct connection between any of the three hidden layers. The output layer takes 4 inputs, three of the inputs are outputs of each hidden layer. The output layer is also recursive layer. So it's own output is fed back as its fourth input. The network model is trained using 'trainrp' network training function which updates weight and bias according to resilient back propagation algorithm (Rprop).
@@ -93,18 +93,18 @@ The number of layers in a network, number of neurons in each layer, transfer fun
 
 We simply cluster the raw dataset and mark certain clusters as signal and others as noise. Prediction based on the distance of the new data point to the centroid of the two cluster groups. 
 
-\paragraph{REP Tree with Bagging}
+\paragraph{Bagging}
 
-Bagging technique developed by Brieman involves creating several models using different subsets of the training dataset~\cite{Bagging}. Each model does its own classification and they all vote with equal weight to decide on the class. 
+Bagging technique developed by Brieman involves creating several models using different subsets of the training dataset~\cite{Bagging}. Each model does its own classification and they all vote with equal weight to decide on the class. We explored the number of iterations it takes to form the solution. We also experimented with two types of tree based classifiers - REP Tree and Decision Stump Classifier.
 
 
-\paragraph{Decision Stump tree with ADA Boosting}
+\paragraph{Boosting}
 
-Based on ADA Boosting developed by Freund and Schapire~\cite{ADABoosting}. Used in conjunction with Decision Stump Tree classifier.
+Here we explore ADA Boosting developed by Freund and Schapire~\cite{ADABoosting} and MultiBoosting technique developed by Webb~\cite{MultiBoosting}. We use these techniques in conjuction with REP Tree and Decision Stump Tree classifiers.
 
 \paragraph{Decision Stump tree with Multi-Boosting}
 
-Based on the MultiBoosting technique developed by Webb~\cite{MultiBoosting}.
+Based on the
 
 
 
