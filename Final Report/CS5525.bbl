@@ -35,12 +35,6 @@ L.~Breiman.
 \newblock Bagging predictors.
 \newblock {\em Machine Learning}, 24(2):123--140, 1996.
 
-\bibitem{CART}
-L.~Breiman, J.~Friedman, R.~Olshen, and C.~Stone.
-\newblock {\em {Classification and Regression Trees}}.
-\newblock Wadsworth and Brooks, Monterey, CA, 1984.
-\newblock new edition \cite{cart93}?
-
 \bibitem{LogisticRegression}
 S.~L. Cessie and J.~C.~V. Houwelingen.
 \newblock Ridge estimators in logistic regression.
