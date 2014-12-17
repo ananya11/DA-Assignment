@@ -72,7 +72,7 @@ For Higgs Boson project, we used both deep and shallow neural networks. We analy
 The hidden layer is of size 60. The transfer function used in this layer is 'tansig' (tan-Sigmoid Transfer Function). Tansig is a neural network transfer function which calculates a layer's output from its net input. The output layer produces only 1 output ( 0 or 1). The transfer function used in this layer is 'purelin'. It is a linear transfer function which calculates the final output.
 
 
-\parapgrah{patternet.} It is a Pattern Recognition Network which is trained to classify inputs from target classes. The target data should consist of a vector of 0 or 1. It contains one hidden layer of size 40. The output layer is of size 1.
+\paragraph{patternet.} It is a Pattern Recognition Network which is trained to classify inputs from target classes. The target data should consist of a vector of 0 or 1. It contains one hidden layer of size 40. The output layer is of size 1.
 
 
 \paragraph{cascadeforwardnet.}  Cascade Forward Network is very similar to feed forward networks but includes a connection from the network input and from every previous layer to following layers. The output layer has two inputs : one from the previous hidden layer and the other from the input. The hidden layer is of size 80. The rest of the network is same as that of FeedForwardNetwork.  
