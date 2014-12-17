@@ -21,6 +21,84 @@ Scalability experiments
 
 
 
+Naive Bayes:
+(Other variations tried)
+All features used:
+
+            precision    recall  f1-score   support
+
+          0       0.85      0.78      0.82     32907
+          1       0.64      0.74      0.69     17093
+
+avg / total       0.78      0.77      0.77     50000
+
+*************************************************
+
+Correlation coefficient = 0.9
+features in used = 27
+
+
+     precision    recall  f1-score   support
+
+          0       0.84      0.80      0.82     32907
+          1       0.65      0.70      0.68     17093
+
+avg / total       0.77      0.77      0.77     50000
+
+*******************************************
+
+Correlation coefficient = 0.8
+features used: 22
+
+          precision    recall  f1-score   support
+
+          0       0.86      0.81      0.83     32907
+          1       0.67      0.74      0.70     17093
+
+avg / total       0.79      0.78      0.79     50000
+
+
+
+
+END of Naive Bayes:
+
+*********************************************
+
+
+
+
+Decision Tree Classifier:
+
+Min split points = 300
+gini index
+correlation coefficient = 0.9
+features used = 27
+
+Modelling ended:
+             precision    recall  f1-score   support
+
+          0       0.86      0.89      0.88     33065
+          1       0.77      0.72      0.75     16935
+
+avg / total       0.83      0.83      0.83     50000
+
+
+Different variation:
+
+No correlation coefficient = 1.0
+
+No change
+
+
+
+*********************************************
+
+
+
+
+
+
+
 
 
 
