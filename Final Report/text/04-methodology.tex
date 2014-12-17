@@ -68,9 +68,14 @@ This classifier is based on the k-nearest neighbor (kNN) technique by aha et al.
 
 \subsubsection{Meta Classifiers and Ensemble Methods}
 
-\paragraph{Rotation Forest}
+\paragraph{Classification via Clustering and Regression}
 
-Based on Rotation Forest technique developed by Rodriguez et al.~\cite{RotationForest}.
+We simply cluster the raw dataset and mark certain clusters as signal and others as noise. Prediction based on the distance of the new data point to the centroid of the two cluster groups. 
+
+\paragraph{REP Tree with Bagging}
+
+Bagging technique developed by Brieman involves creating several models using different subsets of the training dataset~\cite{Bagging}. Each model does its own classification and they all vote with equal weight to decide on the class. 
+
 
 \paragraph{Decision Stump tree with ADA Boosting}
 
@@ -80,10 +85,11 @@ Based on ADA Boosting developed by Freund and Schapire~\cite{ADABoosting}. Used 
 
 Based on the MultiBoosting technique developed by Webb~\cite{MultiBoosting}.
 
-\paragraph{REP Tree with Bagging}
 
-Based on the bagging technique developed by Brieman~\cite{Bagging}.
 
-\paragraph{Classification via Clustering and Regression}
 
-We simply cluster the raw dataset and mark certain clusters as signal and others as noise. Prediction based on the distance of the new data point to the centroid of the two cluster groups. 
+\paragraph{Rotation Forest}
+
+Rotation Forest is an ensemble method developed by Rodriguez et al.~\cite{RotationForest} where several classifiers are combined to produce a highly accurate classifier. 
+
+
