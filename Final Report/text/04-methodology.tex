@@ -36,7 +36,7 @@ In this section, we describe the various classification schemes we explored. For
 
 \paragraph{Naive Bayes}
 
-This classifier is based on the Naive Bayes technique developed by John et al.~\cite{NaiveBayes}. The modeling and prediction overhead were negligible as this method is known to be highly scalable. This method could classify background noise better when compared to signal. During data preprocessing step, we included only those features whose Pearson correlation coefficient was below a particular threshold. Our experiments suggested that out by increasing the threshold value, which in turn increases of number of correlated features, resulted in decrease in the performance of this method.
+This classifier is based on the Naive Bayes technique developed by John et al.~\cite{NaiveBayes}. The modeling and prediction overhead were negligible as this method is known to be highly scalable. This method could classify background noise better when compared to signal. During data preprocessing step, we included only those features whose Pearson correlation coefficient was below a particular threshold. Our experiments suggested that out by increasing the threshold value, which in turn increases of number of correlated features, resulted in decrease in the performance of this method.The best performance is achieved when the dataset included 12 features whose pairwise correlation coefficient is less than 0.6.	
 
 \subsubsection{Functions-based Classifiers}
 
@@ -47,17 +47,17 @@ by varying the number of features in the dataset. The results on our dataset sug
 
 \paragraph{Linear Discriminant Analysis}
 
-
+This linear classifier fits a gaussian distribution of equal variance to each of the classes. We took the class priors to be equal when evaluating this method. The results on our dataset indicate that performance of this technique remains more or less the same when number of features are varied.
 
 \paragraph{Quadratic Discriminant Analysis}
 
-
+This linear method is similar to Linear Discriminant Analysis, expect that this technique uses quadratic decision boundaries. In evaluating this method, we used equal class priors. The optimal performance shown in the table is obtained when the dataset included features whose pairwise correlational coefficient is less than 0.95.
 
 \subsubsection{Tree-based Classifiers}
 
-\paragraph{Simple CART}
+\paragraph{Decision Tree Classifier}
 
-This classifier is based on the classification and regression trees (CART) technique developed by Brieman et al.~\cite{CART}. In this technique <describe technique here>. <Describe parameter tuning here>.
+In evaluating the performance of decision tree classifier, we used "gini" and "entropy" criterion.These two criterion on our dataset produced similar results. We varied the minimum number of samples required to split an internal node, and the best performance was achieved when this value was 300.  The optimal results for this classifier are shown in the table.
 
 \subsubsection{Instance-based Classifiers}
 
