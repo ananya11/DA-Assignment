@@ -5,7 +5,7 @@ In this section, we describe the dataset used, hardware details, accuracy, and t
 
 \subsection{Dataset}
 
-We make use of the dataset provided by Kaggle~\cite{Kaggle}. This is the cleaned up data from the original dataset provided by physicists at the UC Irvine Machine Learning Repository. This data set contains \emph{250000} instances. Each instance (row) in the dataset describes a collision event detected by the collider. Events are described by the kinematic properties (such as direction and momentum) of the particles produced in a collision. A set of 17 features describe these kinematic properties. In addition, 13 derived features that the physicists deemed important are also included in the dataset. \emph{200000} instances from the original dataset is used for \emph{training} and the remaining \emph{50000} instances is used for \emph{testing}.
+We made use of the dataset provided by Kaggle~\cite{Kaggle}. This is the cleaned up data from the original dataset provided by physicists at the UC Irvine Machine Learning Repository. This data set contains \emph{250000} instances. Each instance (row) in the dataset describes a collision event detected by the collider. Events are described by the kinematic properties (such as direction and momentum) of the particles produced in a collision. A set of 17 features describe these kinematic properties. In addition, 13 derived features that the physicists deemed important are also included in the dataset. \emph{200000} instances from the original dataset is used for \emph{training} and the remaining \emph{50000} instances is used for \emph{testing}.
 
 \subsection{Hardware details}
 
@@ -41,7 +41,7 @@ Bagging & 0.79 & 0.74 & 0.77 & 0.87 & 0.9 & 0.88 & 0.84 & 0.85 & 0.84 & 0.91 \\
 
 \subsubsection{Bayesian Classifiers}
 
-As expected, the removal of correlating features had a positive impact on the accuracy of the classifier. When we decrease the threshold value of correlation for parameter removal, the accuracy decreased as the number of correlated features increase. The best performance is achieved when the dataset includes 12 features whose pairwise correlation coefficient is less than 0.6. We also observe that this method can classify background noise better than signal.
+As expected, the removal of correlating features had a positive impact on the accuracy of the classifier. When we decrease the threshold value of correlation for parameter removal, the accuracy decreased as the number of correlated features increased. The best performance is achieved when the dataset includes 12 features whose pairwise correlation coefficient is less than 0.6. We also observe that this method can classify background noise better than signal.
 
 \subsubsection{Function-based Classifiers}
 
@@ -49,7 +49,7 @@ For this class of techniques, we explored varying the features used for classifi
 
 \subsubsection{Tree-based Classifiers}
 
-For the tree-based classifiers, we did not see any different for the two criterion (gini and entropy) explored. The number of samples used to form the split, however, had a significant impact and the best performance was achieved when this value was 300. The corresponding accuracy metrics are shown in Table.~\ref{tab:Summary}.
+For the tree-based classifiers, we did not see any difference for the two criterion (gini and entropy) explored. The number of samples used to form the split, however, had a significant impact and the best performance was achieved when this value was 300. The corresponding accuracy metrics are shown in Table.~\ref{tab:Summary}.
 
 \subsubsection{Instance-based Classifiers}
 
@@ -83,7 +83,7 @@ The regression method is comparable to other linear methods explored earlier. Th
 
 \subsection{Throughput Results}
 
-A particle physics accelerator produces millions to billions of events in a second. The classifier has to be really fast to process that many events in real time. While several dedicated ASICs can be used to perform real time classification for more sophisticated techniques if the accuracy improvement warrants them. In our case several techniques produce similar accuracy thereby making decisions from throughput results necessary. The ensemble methods and neural networks all have similar accuracy. While it is expensive to construct a neural network, it is just an one-time cost. Ensemble methods on the other hand are relatively faster to construct, however since several models have to be evaluated before a decision is made, its prediction overhead is very high as shown in table~\ref{tab:Throughput}. This translates to low throughput. On the other hand, neural networks show much higher throughput even though it takes a long time to construct the model.
+A particle physics accelerator produces millions to billions of events in a second. The classifier has to be really fast to process that many events in real time. In our case several techniques produce similar accuracy thereby making decisions from throughput results necessary. The ensemble methods and neural networks all have similar accuracy. While it is expensive to construct a neural network, it is just an one-time cost. Ensemble methods on the other hand are relatively faster to construct, however since several models have to be evaluated before a decision is made, its prediction overhead is very high as shown in Table~\ref{tab:Throughput}. This translates to low throughput. On the other hand, neural networks show much higher throughput even though it takes longer time to construct the model.
 
 
 \begin{table}[h]
@@ -129,5 +129,5 @@ Bagging & 59500 & 44000 & 1136 \\
 
 \subsection{Discussion}
 
-There has been much discussion about the efficacy of neural networks and ensemble methods in classification problems in HEP. While some researchers have shown that ensemble methods such as boosting is better, others have sworn that neural networks is better. Our results show that there is practically no difference between the two techniques in terms of accuracy. However, the difference in throughput is more pronounced and it makes sense to use neural networks over ensemble methods. The basic classifiers, as expected  did not show a very good accuracy with the exception of decision tree classifiers. The accuracy achieved using decision tree classifier is only marginally less than neural network, but the achieved throughput is an order of magnitude better. This makes the decision tree classifier an attractive alternative. Another important note is that the achieved ROC Area of 0.91 is better than state-of-the-art techniques~\cite{DeepNN} by over 2\%.
+There has been much discussion about the efficacy of neural networks and ensemble methods in classification problems in HEP. While some researchers have shown that ensemble methods such as boosting is better, others have sworn that neural networks are better. Our results show that there is practically no difference between the two techniques in terms of accuracy. However, the difference in throughput is more pronounced and it makes sense to use neural networks over ensemble methods. The basic classifiers, as expected  did not show a very good accuracy with the exception of decision tree classifiers. The accuracy achieved using decision tree classifier is only marginally less than neural network, but the achieved throughput is an order of magnitude better. This makes the decision tree classifier an attractive alternative. Another important note is that the achieved ROC Area of 0.91 is better than state-of-the-art techniques~\cite{DeepNN} by over 2\%.
 
