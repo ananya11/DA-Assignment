@@ -13,7 +13,7 @@ Custom network. (neurons = 20/10/20. no. of hidden layers = 3. 80-20 split) feat
 Feed Forward Network. (neurons = 60. no of hidden layers = 1. 80-20 split) features = 30,,,,,0.91,22.13 mins,173 ms,0.87,0.9,0.88,0.79,0.74,0.77
 Cascade Forward Network. (neurons = 80. no of hidden layers = 1. 80-20 split) features = 30,,,,,0.91,29.13 mins,183 ms,0.87,0.9,0.88,0.79,0.74,0.76
 Pattern Neural Network. (neurons = 40. no of hidden layers = 1. 80-20 split) features = 30,,,,,0.9,8.12 mins, 128 ms,0.85,0.88,0.87,0.75,0.71,0.73
-Rotation Forest,,0.84,0.84,0.84,0.91,1400s,??,0.86,0.91,0.88,0.8,0.73,0.76
+Rotation Forest,,0.84,0.84,0.84,0.91,2390s,1500s,0.86,0.91,0.88,0.8,0.73,0.76
 Boosting (MultiBoost with REP Tree),,0.84,0.84,0.84,0.90,575s,290s,0.87,0.89,0.88,0.78,0.74,0.76
 "Bagging (REP Tree, 50% bag size, 20 iterations)",,0.84,0.85,0.84,0.91,393s,290s,0.87,0.9,0.88,0.79,0.74,0.77
 Classification via clustering,,,,,0.628,,,,,,,,
