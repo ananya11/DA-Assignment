@@ -25,7 +25,7 @@ All experiments were run on a MacBook Pro using a \emph{4-core} Intel Core i7 pr
 While using the raw and derived features, we did not see any notable impact of the number of neighbors on the accuracy. Also, removing irrelevant and noisy features did not help (F1-score was always around 0.70). However, simply by using principal components improved the accuracy to over 74\%. Reducing the number of principal components to four increased the accuracy to over 77.5\%. Also, increasing the number of neighbors improved the accuracy further to 80\%. The best results were obtained for number of principal components = 4 and number of neighbors = 20. The corresponding results are tabulated in the table.
 
 \subsubsection{Neural Network}
-As mentioned before we used multiple NN technics to classify the data between a signal and a background, our results were almost similar. Among the 4 neural networks used here, feedforward and cascade forward network has the best ROC curve (AUC) of 0.91, signal precision and recall as 0.79 and 0.74 respectively.  
+As mentioned before we used multiple NN technics to classify the data between a signal and a background, our results were almost similar. Among the 4 neural networks used here, cascade forward network has the best results --  ROC curve (AUC) as 0.91, precision and recall as 0.84 and 0.85 respectively.  
 
 We noticed that for each network model, the testing performance stops increasing with the increase in the number of neurons in the hidden layers after a certain point . Liu et al.~\cite{NN-Result} call this as the stop criterion. Beyond this point the neural network overestimates the complexity of the target problem which causes overfitting.
 
@@ -40,15 +40,45 @@ Our evaluation indicates that the choice of the decision tree algorithm matters 
 
 \paragraph{Boosting}
 
+Among the two boosting techniques evaluated, MultiBoosting was found to be better. Our results showed using REP Tree was better than Decision Stump Tree. For example, the accuracy increased from 76.8\% to 82.3\% for ADA boost, and from 77\% to 83.9\% for MultiBoost when REP Tree Classifier was used as the base classifier.
+
+\paragraph{Rotation Forest}
+
+Unlike bagging and boosting, the choice of the underlying decision tree classifier did not matter much. The J48 algorithm was marginally better than the REP Tree. The results for the best configuration is presented in the table.
+
+\paragraph{Classification via Clustering and Regression}
+The regression method is comparable to other linear methods explored earlier. The classification via clustering did not work well as expected with an ROC Area of just 0.628 which is the least value obtained among all classifiers explored.
+
 
 \subsection{Throughput Results}
 
 
-%\begin{table}[b]
-%\centering 
-%\caption{Mean error \% for application-independent models} 
-%\begin{tabular}{|r|c|c|c|c|} 
-%\hline 
+\begin{table*}[t]
+\centering 
+\caption{Accuracy results for different models} 
+\resizebox{\linewidth}{!}{%
+\begin{tabular}{|l|ccc|ccc|cccc|} 
+\hline 
+Classifiers & Precision(s) & Recall(s) & f1-score(s) & Precision(b) & Recall(b) & f1-score(b) & Precision & Recall & f1-score & ROC Area \\
+\hline
+Naive Bayes & 0.66 & 0.75 & 0.7 & 0.86 & 0.8 & 0.83 & 0.79 & 0.78 & 0.79 & 0.85 \\
+Decision Tree Classifier & 0.76 & 0.73 & 0.75 & 0.87 & 0.88 & 0.88 & 0.83 & 0.83 & 0.83 & 0.9 \\
+Logistric Regression & 0.69 & 0.62 & 0.65 & 0.81 & 0.86 & 0.83 & 0.77 & 0.78 & 0.77 & 0.84 \\
+LDA & 0.66 & 0.51 & 0.58 & 0.78 & 0.74 & 0.82 & 0.74 & 0.75 & 0.74 & 0.85 \\
+QDA & 0.65 & 0.78 & 0.71 & 0.88 & 0.79 & 0.83 & 0.8 & 0.79 & 0.79 & 0.86 \\
+k-nearest Neighbor & 0.72 & 0.69 & 0.72 & 0.84 & 0.86 & 0.85 & 0.8 & 0.8 & 0.8 & 0.87 \\
+Custom network & 0.79 & 0.71 & 0.74 & 0.85 & 0.9 & 0.87 & 0.83 & 0.83 & 0.82 & 0.89 \\
+Feed Forward Network & 0.79 & 0.74 & 0.77 & 0.87 & 0.9 & 0.88 & 0.84 & 0.84 & 0.84 & 0.91 \\
+Cascade Forward Network & 0.79 & 0.74 & 0.76 & 0.87 & 0.9 & 0.88 & 0.84 & 0.85 & 0.84 & 0.91 \\
+Pattern Neural Network & 0.75 & 0.71 & 0.73 & 0.85 & 0.88 & 0.87 & 0.82 & 0.82 & 0.82 & 0.9 \\
+Rotation Forest & 0.8 & 0.73 & 0.76 & 0.86 & 0.91 & 0.88 & 0.84 & 0.84 & 0.84 & 0.91 \\
+Boosting & 0.78 & 0.74 & 0.76 & 0.87 & 0.89 & 0.88 & 0.84 & 0.84 & 0.84 & 0.9 \\
+Bagging & 0.79 & 0.74 & 0.77 & 0.87 & 0.9 & 0.88 & 0.84 & 0.85 & 0.84 & 0.91 \\
+\hline
+
+\end{tabular}}
+\label{tab:AI-Summary} 
+\end{table*}
 %Models & \multicolumn{2}{|c|}{C2075} & \multicolumn{2}{|c|}{K20c}  \\ 
 %\cline{2-5} 
 %	   & Basic & Temp-aware & Basic & Temp-aware \\ 

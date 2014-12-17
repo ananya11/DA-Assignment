@@ -94,7 +94,7 @@ The number of layers in a network, number of neurons in each layer, transfer fun
 
 \paragraph{Classification via Clustering and Regression}
 
-We simply cluster the raw dataset and mark certain clusters as signal and others as noise. Prediction based on the distance of the new data point to the centroid of the two cluster groups. 
+We simply cluster the raw dataset and mark certain clusters as signal and others as noise. Prediction based on the distance of the new data point to the centroid of the two cluster groups.  For the regression technique, we form an equation from the basic parameters and based on the value from the equation, we predict if the event is a signal or a background.
 
 \paragraph{Bagging}
 
@@ -103,17 +103,10 @@ Bagging technique developed by Brieman involves creating several models using di
 
 \paragraph{Boosting}
 
-Here we explore ADA Boosting developed by Freund and Schapire~\cite{ADABoosting} and MultiBoosting technique developed by Webb~\cite{MultiBoosting}. We use these techniques in conjuction with REP Tree and Decision Stump Tree classifiers.
-
-\paragraph{Decision Stump tree with Multi-Boosting}
-
-Based on the
-
-
-
+Boosting is similar to bagging in that we create several models and they all vote to make the final decision. However, there is a difference in how the dataset is constructed for each model. All those instances that failed in model 1 are propagated to subsequent models. The models that come later all try to improve the regions where the older models failed. Here we explore ADA Boosting developed by Freund and Schapire~\cite{ADABoosting} and MultiBoosting technique developed by Webb~\cite{MultiBoosting}. We use these techniques in conjuction with REP Tree and Decision Stump Tree classifiers.
 
 \paragraph{Rotation Forest}
 
-Rotation Forest is an ensemble method developed by Rodriguez et al.~\cite{RotationForest} where several classifiers are combined to produce a highly accurate classifier. 
+Rotation Forest is an ensemble method developed by Rodriguez et al.~\cite{RotationForest} where several classifiers are combined to produce a highly accurate classifier. Here, again several decision trees combine to decide the final class. However, the difference here is that each tree does this classification based on a \emph{different} subset of the \emph{principal components}. We use this technique in conjunction with J48 decision tree and REP Tree.
 
 
