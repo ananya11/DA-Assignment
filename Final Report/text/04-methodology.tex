@@ -36,13 +36,13 @@ In this section, we describe the various classification schemes we explored. For
 
 \paragraph{Naive Bayes}
 
-This classifier is based on the Naive Bayes technique developed by John et al.~\cite{NaiveBayes}. The modeling and prediction overhead were negligible as this method is known to be highly scalable. This method could classify background noise better when compared to signal. During data preprocessing step, we included only those features whose Pearson correlation coefficient was below a particular threshold. Our experiments suggested that out by increasing the threshold value, which in turn increases of number of correlated features, resulted in decrease in the performance of this method.The best performance is achieved when the dataset included 12 features whose pairwise correlation coefficient is less than 0.6.	
+This classifier is based on the Naive Bayes technique developed by John et al.~\cite{NaiveBayes}. The modeling and prediction overhead is negligible as this method is known to be highly scalable. This method can classify background noise better than signal. During data preprocessing step, we included only those features whose Pearson correlation coefficient was below a particular threshold. Our experiments suggest that by increasing the threshold value, which in turn increases of number of correlated features, performance of this method decreases. The best performance is achieved when the dataset includes 12 features whose pairwise correlation coefficient is less than 0.6.	
 
 \subsubsection{Functions-based Classifiers}
 
 \paragraph{Logistic Regression}
 
-This classifier is based on the Ridge estimation technique developed by Cessie et al.~\cite{Logistic Regression}. Being a linear method, the modeling and prediction overhead were small. In this technique, we used L1 regularized logistic regression. We explored the performance of this method
+This classifier is based on the Ridge estimation technique developed by Cessie et al.~\cite{Logistic Regression}. Being a linear method, the modeling and prediction overhead is small. In this technique, we used L1 regularized logistic regression. We explored the performance of this method
 by varying the number of features in the dataset. The results on our dataset suggest that performance seems to be more or less the same with varying number of features.
 
 \paragraph{Linear Discriminant Analysis}
