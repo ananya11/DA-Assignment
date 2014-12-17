@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2014.8.22)  17 DEC 2014 11:16
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2014.8.22)  17 DEC 2014 11:56
 entering extended mode
 **C:/cygwin64/home/avignesh/repos/DA-Assignment/Final*Report/CS5525.tex
 ("C:/cygwin64/home/avignesh/repos/DA-Assignment/Final Report/CS5525.tex"
@@ -393,13 +393,7 @@ Overfull \hbox (1.59648pt too wide) in paragraph at lines 8--9
 [5]
 Underfull \vbox (badness 1577) has occurred while \output is active []
 
- [6]
-Overfull \hbox (5.58372pt too wide) in paragraph at lines 86--87
-\OT1/cmr/m/n/10 sev-eral tech-niques pro-duce sim-i-lar ac-cu-racy thereby mak-
-
- []
-
-)
+ [6])
 ("C:\cygwin64\home\avignesh\repos\DA-Assignment\Final Report\text/07-conclusion
 .tex") ("C:\cygwin64\home\avignesh\repos\DA-Assignment\Final Report\CS5525.bbl"
 
@@ -407,12 +401,9 @@ Package balance Warning: You have called \balance in second column
 (balance)                Columns might not be balanced.
 
 [7]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
 LaTeX Font Info:    Try loading font information for OMS+cmr on input line 115.
 
-
-("C:\Program Files\MiKTeX 2.9\tex\latex\base\omscmr.fd"
+ ("C:\Program Files\MiKTeX 2.9\tex\latex\base\omscmr.fd"
 File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
@@ -420,6 +411,9 @@ LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
 Missing character: There is no â in font cmr10!
 Missing character: There is no € in font cmr10!
 Missing character: There is no “ in font cmr10!
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
 )
 ("C:\cygwin64\home\avignesh\repos\DA-Assignment\Final Report\text/appendix.tex"
 )
@@ -434,11 +428,10 @@ Underfull \hbox (badness 10000) in paragraph at lines 3--120
  []
 
 
-Overfull \vbox (0.19444pt too high) has occurred while \output is active []
+Overfull \vbox (0.75pt too high) has occurred while \output is active []
 
-
-[8] ("C:\cygwin64\home\avignesh\repos\DA-Assignment\Final Report\CS5525.aux") )
- 
+ [8]
+("C:\cygwin64\home\avignesh\repos\DA-Assignment\Final Report\CS5525.aux") ) 
 Here is how much of TeX's memory you used:
  3652 strings out of 493921
  53000 string characters out of 3147273
@@ -447,19 +440,20 @@ Here is how much of TeX's memory you used:
  43838 words of font info for 64 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
  42i,12n,40p,1923b,291s stack positions out of 5000i,500n,10000p,200000b,50000s
-{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/fontname/8r.enc}<C:/Program Files/
-MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Program Files/MiKTeX 2
-.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Program Files/MiKTeX 2.9/fonts
-/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/pu
-blic/amsfonts/cm/cmr9.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfo
-nts/cm/cmsy10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/c
-msy9.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti10.pfb
-><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmtt10.pfb><C:/Pro
-gram Files/MiKTeX 2.9/fonts/type1/urw/helvetic/uhvb8a.pfb><C:/Program Files/MiK
-TeX 2.9/fonts/type1/urw/helvetic/uhvr8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/
-type1/urw/times/utmb8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/times/u
-tmr8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/times/utmri8a.pfb>
-Output written on CS5525.pdf (8 pages, 301285 bytes).
+{C:/
+Program Files/MiKTeX 2.9/fonts/enc/dvips/fontname/8r.enc}<C:/Program Files/MiKT
+eX 2.9/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Program Files/MiKTeX 2.9/f
+onts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Program Files/MiKTeX 2.9/fonts/typ
+e1/public/amsfonts/cm/cmr10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public
+/amsfonts/cm/cmr9.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/
+cm/cmsy10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy9
+.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti10.pfb><C:
+/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmtt10.pfb><C:/Program
+ Files/MiKTeX 2.9/fonts/type1/urw/helvetic/uhvb8a.pfb><C:/Program Files/MiKTeX 
+2.9/fonts/type1/urw/helvetic/uhvr8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type
+1/urw/times/utmb8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/times/utmr8
+a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/times/utmri8a.pfb>
+Output written on CS5525.pdf (8 pages, 300550 bytes).
 PDF statistics:
  86 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
