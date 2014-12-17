@@ -14,8 +14,9 @@ Feed Forward Network. (neurons = 60. no of hidden layers = 1. 80-20 split) featu
 Cascade Forward Network. (neurons = 80. no of hidden layers = 1. 80-20 split) features = 30,,,,,0.91,29.13 mins,183 ms,0.87,0.9,0.88,0.79,0.74,0.76
 Pattern Neural Network. (neurons = 40. no of hidden layers = 1. 80-20 split) features = 30,,,,,0.9,8.12 mins, 128 ms,0.85,0.88,0.87,0.75,0.71,0.73
 Rotation Forest,,0.84,0.84,0.84,0.91,1400s,??,0.86,0.91,0.88,0.8,0.73,0.76
-AdaBoostM1 (Decision Stump Tree),,0.77,0.77,0.75,0.86,36.7 s,,0.77,0.92,0.84,0.75,0.48,0.59
-Bagging (Rep Tree),,0.84,0.84,0.84,0.91,136s,,0.87,0.9,0.88,0.79,0.73,0.75
+AdaBoostM1 (Decision Stump Tree),,0.77,0.77,0.75,0.86,36.7s,,0.77,0.92,0.84,0.75,0.48,0.59
+"Bagging (REP Tree, 50% bag size, 20 iterations)",,0.84,0.85,0.84,0.91,393s,290s,0.87,0.9,0.88,0.79,0.74,0.77
 Classification via clustering,,,,,0.628,,,,,,,,
 Classification via Regression,,,,,0.88,,,,,,,,
 MultiBoostAB (Decision Stump),,,,,,,,,,,,,
+"kNN (Neighbor = 20, PC = 4)",,0.8,0.8,0.8,0.87,2s,450s,0.84,0.86,0.85,0.72,0.69,0.72

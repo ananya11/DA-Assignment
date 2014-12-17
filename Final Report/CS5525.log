@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2014.8.22)  16 DEC 2014 23:42
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2014.8.22)  17 DEC 2014 00:09
 entering extended mode
 **C:/cygwin64/home/avignesh/repos/DA-Assignment/Final*Report/CS5525.tex
 ("C:/cygwin64/home/avignesh/repos/DA-Assignment/Final Report/CS5525.tex"
@@ -388,18 +388,27 @@ Overfull \hbox (18.02527pt too wide) in paragraph at lines 107--108
 
 )
 ("C:\cygwin64\home\avignesh\repos\DA-Assignment\Final Report\text/05-results.te
-x")
+x"
+
+LaTeX Warning: Citation `Kaggle-Dataset' on page \thepage  undefined on input l
+ine 8.
+
+)
 ("C:\cygwin64\home\avignesh\repos\DA-Assignment\Final Report\text/07-conclusion
 .tex") ("C:\cygwin64\home\avignesh\repos\DA-Assignment\Final Report\CS5525.bbl"
-
-LaTeX Warning: Citation `cart93' on page \thepage  undefined on input line 35.
-
 
 Package balance Warning: You have called \balance in second column
 (balance)                Columns might not be balanced.
 
-[4])
-Overfull \vbox (0.87096pt too high) has occurred while \output is active []
+[4]
+
+LaTeX Warning: Citation `cart93' on page \thepage  undefined on input line 35.
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+)
+Overfull \vbox (1.24596pt too high) has occurred while \output is active []
 
 
 [5] ("C:\cygwin64\home\avignesh\repos\DA-Assignment\Final Report\CS5525.aux")
@@ -408,10 +417,10 @@ LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 3910 strings out of 493921
- 55238 string characters out of 3147273
- 118198 words of memory out of 3000000
- 7103 multiletter control sequences out of 15000+200000
+ 3911 strings out of 493921
+ 55254 string characters out of 3147273
+ 122198 words of memory out of 3000000
+ 7104 multiletter control sequences out of 15000+200000
  50017 words of font info for 68 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
  42i,12n,40p,1925b,294s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -426,7 +435,7 @@ ogram Files/MiKTeX 2.9/fonts/type1/urw/helvetic/uhvr8a.pfb><C:/Program Files/Mi
 KTeX 2.9/fonts/type1/urw/times/utmb8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/ty
 pe1/urw/times/utmr8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/times/utm
 ri8a.pfb>
-Output written on CS5525.pdf (5 pages, 253124 bytes).
+Output written on CS5525.pdf (5 pages, 255391 bytes).
 PDF statistics:
  67 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
