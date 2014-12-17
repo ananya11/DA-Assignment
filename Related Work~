@@ -1,0 +1,56 @@
+The goal is to have a minimum of 8 papers in the problem space (detecting particles in accelerators using machine learning/data mining techniques). Additional papers would include problems making use of neural networks/other deep learning approaches)
+
+
+Format
+Paper Title
+Link:
+
+2-3 line summary.
+1 line summary of results
+
+Related work
+
+
+Paper #1 - Ananya
+Searching for Exotic Particles in High-energy Physics with Deep Learning
+(ANN) paper.
+http://arxiv.org/abs/1402.4735
+
+The authors in this paper used deep learning methods of neural network to find exotic particles in high energy particle 
+colliders. Deep learning models are neural networks with multiple hidden networks. Current technics like shallow models 
+which are single hidden layer feedforward network fail to capture all features.
+
+The deep learning model here is used on 2.6 million training examples and 100,000 validation examples. The mode is a 
+five-layer neural network with 300 hidden units in each layer, learning rate of 0.05, and a weight decay coefficient 
+of 0.00001 . Testing is done on 500,000 examples. For Higgs benchmark, Area Under the Curve(AUC) - complete for deep 
+neural network is 0.88 and for shallow neural network = 0.81. 
+
+
+
+Paper #2 - Ananya
+Forecasting with artificial neural networks: The state of the art
+http://www.sciencedirect.com/science/article/pii/S0169207097000447
+
+This paper provides an analysis of artificial neural networks in  the one of its major application area - forecasting. 
+They provide a summary of current research status of ANN in forecasting and second they provide a guideline of areas for 
+future research . 
+It discusses different ways to construct and implement neural networks for forecasting focussing mainly on multi-layer
+feed forward network. They provide a literature review of papers devoted to comparing ANNs with conventional forecasting 
+approaches.
+
+
+
+Paper #3 - Ananya
+Boosted Decision Trees as an Alternative to Artificial Neural Networks for Particle Identification
+http://arxiv.org/pdf/physics/0408124v2.pdf
+
+A data classification technic, boosting is introduced in this paper for data analysis by applying to decision trees. 
+Boosting combines many weak classifier to achieve a final powerful classifier. It is anticipated to have wide 
+application in particle physics experiments for signal and background analysis. Two boosting algorithm AdaBoost 
+and e-Boost is considered here.
+
+In the paper, ANN and AdaBoost performances are compared under different scale. Comparing the best ANN results 
+and best boosting results when trained by signal and neutral current, ANN keeps 1.5 times more background events 
+for 50% CCQE efficiencies. Comparison of Adaboost and e-Boost performance for background contamination vs intrinsic
+CCQE selection efficiency shows that Adaboost is better for <200 tree iterations while e-Boost is better for 
+larger iterations

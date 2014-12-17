@@ -64,6 +64,13 @@ G.~H. John and P.~Langley.
   Artificial Intelligence}, UAI'95, pages 338--345, San Francisco, CA, USA,
   1995. Morgan Kaufmann Publishers Inc.
 
+\bibitem{NN-Result}
+Y.~Liu, J.~A. Starzyk, and Z.~Zhu.
+\newblock Optimizing number of hidden neurons in neural networks.
+\newblock In {\em Proceedings of the 25th Conference on Proceedings of the 25th
+  IASTED International Multi-Conference: Artificial Intelligence and
+  Applications}, AIAP'07, pages 121--126, Anaheim, CA, USA, 2007. ACTA Press.
+
 \bibitem{NN2}
 L.~L\"onnblad, C.~Peterson, and T.~R\"ognvaldsson.
 \newblock Finding gluon jets with a neural trigger.
@@ -74,6 +81,13 @@ I.~{Narsky}.
 \newblock {StatPatternRecognition: A C++ Package for Statistical Analysis of
   High Energy Physics Data}.
 \newblock {\em ArXiv Physics e-prints}, July 2005.
+
+\bibitem{NN-Speed}
+D.~Nguyen and B.~Widrow.
+\newblock Improving the learning speed of 2-layer neural networks by choosing
+  initial values of the adaptive weights.
+\newblock In {\em Neural Networks, 1990., 1990 IJCNN International Joint
+  Conference on}, pages 21--26 vol.3, June 1990.
 
 \bibitem{NN3}
 C.~Peterson.
