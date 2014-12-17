@@ -36,15 +36,18 @@ In this section, we describe the various classification schemes we explored. For
 
 \paragraph{Naive Bayes}
 
-This classifier is based on the Naive Bayes technique developed by John et al.~\cite{NaiveBayes}. In this technique <describe technique here>. <Describe parameter tuning here>.
+This classifier is based on the Naive Bayes technique developed by John et al.~\cite{NaiveBayes}. The modeling and prediction overhead were negligible as this method is known to be highly scalable. This method could classify background noise better when compared to signal. During data preprocessing step, we included only those features whose Pearson correlation coefficient was below a particular threshold. Our experiments suggested that out by increasing the threshold value, which in turn increases of number of correlated features, resulted in decrease in the performance of this method.
 
 \subsubsection{Functions-based Classifiers}
 
 \paragraph{Logistic Regression}
 
-This classifier is based on the Ridge estimation technique developed by Cessie et al.~\cite{Logistic Regression}. In this technique <describe technique here>. <Describe parameter tuning here>.
+This classifier is based on the Ridge estimation technique developed by Cessie et al.~\cite{Logistic Regression}. Being a linear method, the modeling and prediction overhead were small. In this technique, we used L1 regularized logistic regression. We explored the performance of this method
+by varying the number of features in the dataset. The results on our dataset suggest that performance seems to be more or less the same with varying number of features.
 
 \paragraph{Linear Discriminant Analysis}
+
+
 
 \paragraph{Quadratic Discriminant Analysis}
 
