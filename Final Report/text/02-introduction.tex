@@ -4,6 +4,7 @@
 Physicists use high-energy particle colliders such as the Large Hadron Collider (LHC) to produce new particles in order to understand the elementary structure of matter. In these colliders protons collide at high speed to produce several interesting particles which quickly decays into other stable particles. The particles produced in these experiments are identical in many aspects but differ in their kinematic features. Of particular interest in the Higgs-Boson particle which aids in understanding the fundamental structure of matter. Studying this particle is expected to provide insight into the functioning of universe and its possible fates. While the``real world'' impact of the particle is not known yet, the scientific impact is so huge that billions of dollars has been invested in constructing colliders that produce this particle. Identifying the Higgs boson particle reliably and efficiently enables solving the bigger problem of studying the particle. \\
 
 One fundamental limitation of using magnetic detectors is their inability to distinguish signal (Higgs-Boson producing collision) from background noise (other collisions) when the signal-to-background ratio is too low. An alternative approach is to measure the properties of stable particles and infer the decaying particle originally produced by collision. For this purpose, scientists have created models of Higgs-Boson and other particles, simulate their decay using these models, and record the kinematic properties of the stable particles produced at the end. Based on these kinematic properties, they can create models to find the originally produced particles. This model can then be used in real accelerators for real-time detection of Higgs-Boson particle. Based on the above, we formally state our data mining task as follows.\\
+
 \textbf{Data Mining Task.} The problem of interest is classification. Given the kinematic features of stable particles produced in a collision, we classify it as signal (decays from Higgs-Boson) or background (otherwise).\\
 
 Given the rarity in occurrence of signal events and their importance in understanding the nature of matter, the primary goal is to identify most signal events correctly. Secondarily, since millions of events occur every second, we are also interested in identifying techniques that maximize the number of classifications per second. \\
@@ -16,7 +17,12 @@ Our major contributions are as follows:
 \end{enumerate}
 Our contributions help in identifying the appropriate classifiers for the given task and provides clarification on the complexity of features necessary for classification. \\
 
-Our major findings are as follows: <Fill in interesting results here> \\
+Our major findings are as follows: 
+\begin{enumerate}
+\item	There is no discernible difference in accuracy when we compare a neural network and an ensemble scheme.
+\item	Neural networks, however, is a better choice as the throughput (classifications made per second) is significantly higher.
+\item	It is possible to outperform the state-of-the-art implementations by carefully handling missing values, selecting the right parameters, and tuning the classification parameters. Our best classifiers outperform the state-of-the-art by 2\%.
+\end{enumerate}
 
-The rest of the paper is organized as follows. Section II provides the necessary background in theoretical physics. Section III describes the related work. Section IV describes our approach. We present our results in Section V and conclude in section VI.
+In addition, we also make several observations on other methods in the results and discussion section. The rest of the paper is organized as follows. Section II provides the necessary background in theoretical physics. Section III describes the related work. Section IV describes our approach. We present our results in Section V and conclude in section VI.
 

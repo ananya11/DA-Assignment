@@ -1,0 +1,140 @@
+\begin{thebibliography}{10}
+
+\bibitem{Ananya1}
+G.~{Aad}, T.~{Abajyan}, B.~{Abbott}, J.~{Abdallah}, S.~{Abdel Khalek}, A.~A.
+  {Abdelalim}, O.~{Abdinov}, R.~{Aben}, B.~{Abi}, M.~{Abolins}, and et~al.
+\newblock {Observation of a new particle in the search for the Standard Model
+  Higgs boson with the ATLAS detector at the LHC}.
+\newblock {\em Physics Letters B}, 716:1--29, Sept. 2012.
+
+\bibitem{kNN}
+D.~W. Aha, D.~Kibler, and M.~K. Albert.
+\newblock Instance-based learning algorithms.
+\newblock {\em Mach. Learn.}, 6(1):37--66, Jan. 1991.
+
+\bibitem{DeepNN}
+P.~{Baldi}, P.~{Sadowski}, and D.~{Whiteson}.
+\newblock {Searching for exotic particles in high-energy physics with deep
+  learning}.
+\newblock {\em Nature Communications}, 5:4308, July 2014.
+
+\bibitem{MultipleImputation}
+M.~Blackwell, J.~Honaker, and G.~King.
+\newblock <p>a unified approach to measurement error and missing data:
+  Overview</p>.
+\newblock {\em Sociological Methods and Research}, In Press.
+
+\bibitem{Binary-DT}
+D.~{Bowser-Chao} and D.~L. {Dzialo}.
+\newblock {Comparison of the use of binary decision trees and neural networks
+  in top-quark detection}.
+\newblock {\em Physics Rev D.}, 47:1900--1905, Mar. 1993.
+
+\bibitem{Bagging}
+L.~Breiman.
+\newblock Bagging predictors.
+\newblock {\em Machine Learning}, 24(2):123--140, 1996.
+
+\bibitem{CART}
+L.~Breiman, J.~Friedman, R.~Olshen, and C.~Stone.
+\newblock {\em {Classification and Regression Trees}}.
+\newblock Wadsworth and Brooks, Monterey, CA, 1984.
+\newblock new edition \cite{cart93}?
+
+\bibitem{LogisticRegression}
+S.~L. Cessie and J.~C.~V. Houwelingen.
+\newblock Ridge estimators in logistic regression.
+\newblock {\em Journal of the Royal Statistical Society. Series C (Applied
+  Statistics)}, 41(1):pp. 191--201, 1992.
+
+\bibitem{Ananya2}
+S.~{Chatrchyan}, V.~{Khachatryan}, A.~M. {Sirunyan}, A.~{Tumasyan}, W.~{Adam},
+  E.~{Aguilo}, T.~{Bergauer}, M.~{Dragicevic}, J.~{Er{\"o}}, C.~{Fabjan}, and
+  et~al.
+\newblock {Observation of a new boson at a mass of 125 GeV with the CMS
+  experiment at the LHC}.
+\newblock {\em Physics Letters B}, 716:30--61, Sept. 2012.
+
+\bibitem{Cutts-NN1}
+D.~Cutts, J.~Hoftun, A.~Sornborger, R.~Astur, C.~R. Johnson, and R.~T. Zeller.
+\newblock The use of neural networks in the d0 data acquisition system.
+\newblock {\em Nuclear Science, IEEE Transactions on}, 36(5):1490--1493, Oct
+  1989.
+
+\bibitem{ADABoosting}
+Y.~Freund and R.~E. Schapire.
+\newblock Experiments with a new boosting algorithm.
+\newblock In {\em Thirteenth International Conference on Machine Learning},
+  pages 148--156, San Francisco, 1996. Morgan Kaufmann.
+
+\bibitem{Amelia}
+J.~Honaker, G.~King, and M.~Blackwell.
+\newblock {Amelia II}: A program for missing data.
+\newblock {\em Journal of Statistical Software}, 45(7):1--47, 2011.
+
+\bibitem{NaiveBayes}
+G.~H. John and P.~Langley.
+\newblock Estimating continuous distributions in bayesian classifiers.
+\newblock In {\em Proceedings of the Eleventh Conference on Uncertainty in
+  Artificial Intelligence}, UAI'95, pages 338--345, San Francisco, CA, USA,
+  1995. Morgan Kaufmann Publishers Inc.
+
+\bibitem{NN-Result}
+Y.~Liu, J.~A. Starzyk, and Z.~Zhu.
+\newblock Optimizing number of hidden neurons in neural networks.
+\newblock In {\em Proceedings of the 25th Conference on Proceedings of the 25th
+  IASTED International Multi-Conference: Artificial Intelligence and
+  Applications}, AIAP'07, pages 121--126, Anaheim, CA, USA, 2007. ACTA Press.
+
+\bibitem{NN2}
+L.~L\"onnblad, C.~Peterson, and T.~R\"ognvaldsson.
+\newblock Finding gluon jets with a neural trigger.
+\newblock {\em Phys. Rev. Lett.}, 65:1321--1324, Sep 1990.
+
+\bibitem{StatPatternRecognition}
+I.~{Narsky}.
+\newblock {StatPatternRecognition: A C++ Package for Statistical Analysis of
+  High Energy Physics Data}.
+\newblock {\em ArXiv Physics e-prints}, July 2005.
+
+\bibitem{NN-Speed}
+D.~Nguyen and B.~Widrow.
+\newblock Improving the learning speed of 2-layer neural networks by choosing
+  initial values of the adaptive weights.
+\newblock In {\em Neural Networks, 1990., 1990 IJCNN International Joint
+  Conference on}, pages 21--26 vol.3, June 1990.
+
+\bibitem{NN3}
+C.~Peterson.
+\newblock Track finding with neural networks.
+\newblock {\em Nuclear Instruments and Methods in Physics Research Section A:
+  Accelerators, Spectrometers, Detectors and Associated Equipment}, 279(3):537
+  -- 545, 1989.
+
+\bibitem{detectors}
+J.~Pinfold.
+\newblock Searching for exotic particles at the \{LHC\} with dedicated
+  detectors.
+\newblock {\em Nuclear Physics B - Proceedings Supplements}, 78(1–3):52 --
+  57, 1999.
+\newblock Advanced Technology and Particle Physics.
+
+\bibitem{RotationForest}
+J.~J. Rodriguez, L.~I. Kuncheva, and C.~J. Alonso.
+\newblock Rotation forest: A new classifier ensemble method.
+\newblock {\em IEEE Transactions on Pattern Analysis and Machine Intelligence},
+  28(10):1619--1630, 2006.
+
+\bibitem{Boosted-DT}
+B.~P. {Roe}, H.-J. {Yang}, J.~{Zhu}, Y.~{Liu}, I.~{Stancu}, and G.~{McGregor}.
+\newblock {Boosted decision trees as an alternative to artificial neural
+  networks for particle identification}.
+\newblock {\em Nuclear Instruments and Methods in Physics Research A},
+  543:577--584, May 2005.
+
+\bibitem{MultiBoosting}
+G.~I. Webb.
+\newblock Multiboosting: A technique for combining boosting and wagging.
+\newblock {\em Machine Learning}, Vol.40(No.2), 2000.
+
+\end{thebibliography}

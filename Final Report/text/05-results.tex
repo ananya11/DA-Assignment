@@ -13,6 +13,32 @@ All experiments were run on a MacBook Pro using a \emph{4-core} Intel Core i7 pr
 
 \subsection{Accuracy Results}
 
+\begin{table*}[t]
+\centering 
+\caption{Accuracy results for different models} 
+\resizebox{\linewidth}{!}{%
+\begin{tabular}{|l|ccc|ccc|cccc|} 
+\hline 
+Classifiers & Precision(s) & Recall(s) & f1-score(s) & Precision(b) & Recall(b) & f1-score(b) & Precision & Recall & f1-score & ROC Area \\
+\hline
+Naive Bayes & 0.66 & 0.75 & 0.7 & 0.86 & 0.8 & 0.83 & 0.79 & 0.78 & 0.79 & 0.85 \\
+Decision Tree Classifier & 0.76 & 0.73 & 0.75 & 0.87 & 0.88 & 0.88 & 0.83 & 0.83 & 0.83 & 0.9 \\
+Logistric Regression & 0.69 & 0.62 & 0.65 & 0.81 & 0.86 & 0.83 & 0.77 & 0.78 & 0.77 & 0.84 \\
+LDA & 0.66 & 0.51 & 0.58 & 0.78 & 0.74 & 0.82 & 0.74 & 0.75 & 0.74 & 0.85 \\
+QDA & 0.65 & 0.78 & 0.71 & 0.88 & 0.79 & 0.83 & 0.8 & 0.79 & 0.79 & 0.86 \\
+k-nearest Neighbor & 0.72 & 0.69 & 0.72 & 0.84 & 0.86 & 0.85 & 0.8 & 0.8 & 0.8 & 0.87 \\
+Custom network & 0.79 & 0.71 & 0.74 & 0.85 & 0.9 & 0.87 & 0.83 & 0.83 & 0.82 & 0.89 \\
+Feed Forward Network & 0.79 & 0.74 & 0.77 & 0.87 & 0.9 & 0.88 & 0.84 & 0.84 & 0.84 & 0.91 \\
+Cascade Forward Network & 0.79 & 0.74 & 0.76 & 0.87 & 0.9 & 0.88 & 0.84 & 0.85 & 0.84 & 0.91 \\
+Pattern Neural Network & 0.75 & 0.71 & 0.73 & 0.85 & 0.88 & 0.87 & 0.82 & 0.82 & 0.82 & 0.9 \\
+Rotation Forest & 0.8 & 0.73 & 0.76 & 0.86 & 0.91 & 0.88 & 0.84 & 0.84 & 0.84 & 0.91 \\
+Boosting & 0.78 & 0.74 & 0.76 & 0.87 & 0.89 & 0.88 & 0.84 & 0.84 & 0.84 & 0.9 \\
+Bagging & 0.79 & 0.74 & 0.77 & 0.87 & 0.9 & 0.88 & 0.84 & 0.85 & 0.84 & 0.91 \\
+\hline
+\end{tabular}}
+\label{tab:Summary} 
+\end{table*}
+
 \subsubsection{Bayesian Classifiers}
 
 \subsubsection{Function-based Classifiers}
@@ -52,33 +78,36 @@ The regression method is comparable to other linear methods explored earlier. Th
 
 \subsection{Throughput Results}
 
+A particle physics accelerator produces millions to billions of events in a second. The classifier has to be really fast to process that many events in real time. While several dedicated ASICs can be used to perform real time classification for more sophisticated techniques if the accuracy improvement warrants them, in our case several techniques produce similar accuracy thereby making decisions from throughput results necessary. The ensemble methods and neural networks all have similar accuracy. While it is expensive to construct a neural network, it is just an one-time cost. Ensemble methods on the other hand are relatively faster to construct, however since several models have to be evaluated before a decision is made, its prediction overhead is very high~\ref{tab:Throughput}. This translates to low throughput. On the other hand, neural networks show much higher throughput even though it takes a long time to construct the model.
 
-\begin{table*}[t]
-\centering 
-\caption{Accuracy results for different models} 
+
+\begin{table}[h]
+\centering
+\caption{Throughput results for different classifiers}
 \resizebox{\linewidth}{!}{%
-\begin{tabular}{|l|ccc|ccc|cccc|} 
+\begin{tabular}{|l|r|r|r|} 
 \hline 
-Classifiers & Precision(s) & Recall(s) & f1-score(s) & Precision(b) & Recall(b) & f1-score(b) & Precision & Recall & f1-score & ROC Area \\
+Classifiers & Modeling(ms) & Prediction(ms) & Classifications/s \\ \hline
+Naive Bayes & 86 & 11 & 4587156 \\
+Decision Tree Classifier &8750 & 13 & 3937008 \\
+Logistric Regression &12300 & 9 & 5561735 \\
+LDA &316 & 20 & 2551020 \\
+QDA & 266 & 52 & 967118 \\
+k-nearest Neighbor &200 & 68000 & 735 \\
+Custom network &603000 & 187 & 267380 \\
+Feed Forward Network &786000 & 102 & 490196 \\
+Cascade Forward Network & 1034000 & 108 & 462963 \\ 
+Pattern Neural Network & 828800 & 75 & 666667 \\
+Rotation Forest &362000 & 227000 & 220 \\
+Boosting &87000 & 44000 & 1136 \\
+Bagging & 59500 & 44000 & 1136 \\
 \hline
-Naive Bayes & 0.66 & 0.75 & 0.7 & 0.86 & 0.8 & 0.83 & 0.79 & 0.78 & 0.79 & 0.85 \\
-Decision Tree Classifier & 0.76 & 0.73 & 0.75 & 0.87 & 0.88 & 0.88 & 0.83 & 0.83 & 0.83 & 0.9 \\
-Logistric Regression & 0.69 & 0.62 & 0.65 & 0.81 & 0.86 & 0.83 & 0.77 & 0.78 & 0.77 & 0.84 \\
-LDA & 0.66 & 0.51 & 0.58 & 0.78 & 0.74 & 0.82 & 0.74 & 0.75 & 0.74 & 0.85 \\
-QDA & 0.65 & 0.78 & 0.71 & 0.88 & 0.79 & 0.83 & 0.8 & 0.79 & 0.79 & 0.86 \\
-k-nearest Neighbor & 0.72 & 0.69 & 0.72 & 0.84 & 0.86 & 0.85 & 0.8 & 0.8 & 0.8 & 0.87 \\
-Custom network & 0.79 & 0.71 & 0.74 & 0.85 & 0.9 & 0.87 & 0.83 & 0.83 & 0.82 & 0.89 \\
-Feed Forward Network & 0.79 & 0.74 & 0.77 & 0.87 & 0.9 & 0.88 & 0.84 & 0.84 & 0.84 & 0.91 \\
-Cascade Forward Network & 0.79 & 0.74 & 0.76 & 0.87 & 0.9 & 0.88 & 0.84 & 0.85 & 0.84 & 0.91 \\
-Pattern Neural Network & 0.75 & 0.71 & 0.73 & 0.85 & 0.88 & 0.87 & 0.82 & 0.82 & 0.82 & 0.9 \\
-Rotation Forest & 0.8 & 0.73 & 0.76 & 0.86 & 0.91 & 0.88 & 0.84 & 0.84 & 0.84 & 0.91 \\
-Boosting & 0.78 & 0.74 & 0.76 & 0.87 & 0.89 & 0.88 & 0.84 & 0.84 & 0.84 & 0.9 \\
-Bagging & 0.79 & 0.74 & 0.77 & 0.87 & 0.9 & 0.88 & 0.84 & 0.85 & 0.84 & 0.91 \\
-\hline
-
 \end{tabular}}
-\label{tab:AI-Summary} 
-\end{table*}
+\label{tab:Throughput} 
+\end{table}
+
+
+
 %Models & \multicolumn{2}{|c|}{C2075} & \multicolumn{2}{|c|}{K20c}  \\ 
 %\cline{2-5} 
 %	   & Basic & Temp-aware & Basic & Temp-aware \\ 
@@ -94,4 +123,6 @@ Bagging & 0.79 & 0.74 & 0.77 & 0.87 & 0.9 & 0.88 & 0.84 & 0.85 & 0.84 & 0.91 \\
 %\end{table}
 
 \subsection{Discussion}
+
+There has been much discussion about the efficacy of neural networks and ensemble methods in classification problems in HEP. While some researchers have shown that ensemble methods such as boosting is better, others have sworn that neural networks is better. Our results show that there is practically no difference between the two techniques in terms of accuracy. However, the difference in throughput is more pronounced and it makes sense to use neural networks over ensemble methods. The basic classifiers, as expected  did not show a very good accuracy with the exception of decision tree classifiers. The accuracy achieved using decision tree classifier is only marginally less than neural network, but the achieved throughput is an order of magnitude better. This makes the decision tree classifier an attractive alternative. Another important note is that the achieved ROC Area of 0.91 is better than state-of-the-art techniques~\cite{DeepNN} by over 2\%.
 
