@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2014.8.22)  16 DEC 2014 22:37
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2014.8.22)  16 DEC 2014 22:42
 entering extended mode
 **C:/cygwin64/home/avignesh/repos/DA-Assignment/Final*Report/CS5525.tex
 ("C:/cygwin64/home/avignesh/repos/DA-Assignment/Final Report/CS5525.tex"
@@ -389,7 +389,7 @@ LaTeX Warning: There were undefined references.
 Here is how much of TeX's memory you used:
  3907 strings out of 493921
  55247 string characters out of 3147273
- 123749 words of memory out of 3000000
+ 124749 words of memory out of 3000000
  7101 multiletter control sequences out of 15000+200000
  48939 words of font info for 67 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
@@ -404,7 +404,7 @@ tt9.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/helvetic/uhvb8a.pfb><C:/Pr
 ogram Files/MiKTeX 2.9/fonts/type1/urw/helvetic/uhvr8a.pfb><C:/Program Files/Mi
 KTeX 2.9/fonts/type1/urw/times/utmb8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/ty
 pe1/urw/times/utmri8a.pfb>
-Output written on CS5525.pdf (4 pages, 232134 bytes).
+Output written on CS5525.pdf (4 pages, 232556 bytes).
 PDF statistics:
  60 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
